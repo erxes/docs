@@ -11,7 +11,8 @@
       "installation/docker",
       "installation/kubernetes",
       "installation/ubuntu",
-      "installation/upgrade"
+      "installation/upgrade",
+      "installation/upgradedfd"
     ],
     "User's Guide": [
       "user/initial-setup",
