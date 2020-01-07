@@ -34,10 +34,9 @@ Please try clicking the deploy button below, then set all the config vars and hi
 REACT_APP_API_SUBSCRIPTION_URL = ws://erxes-api.herokuapp.com/subscriptions
 REACT_APP_API_URL = https://erxes-api.herokuapp.com
 REACT_APP_CDN_HOST = https://erxes-widget.herokuapp.com
-REACT_APP_CDN_HOST_API = https://erxes-widget-api.herokuapp.com
 ```
 
-[![Deploy erxes](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes")](https://heroku.com/deploy?template=https://github.com/erxes/erxes)
+[![Deploy erxes](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes")](https://heroku.com/deploy?template=https://github.com/batnasan/erxes/tree/master)
 
 2.**Install erxes API**
 
@@ -75,11 +74,10 @@ REDIS_PORT = 28229 # update it later on
 UPLOAD_FILE_TYPES = image/png,image/jpeg,image/jpg,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,
 UPLOAD_SERVICE_TYPE = AWS
 USE_BRAND_RESTRICTIONS = false
-WIDGETS_API_DOMAIN = https://erxes-widget-api.herokuapp.com
 WIDGETS_DOMAIN = https://erxes-widget.herokuapp.com
 ```
 
-[![Deploy erxes API](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes API")](https://heroku.com/deploy?template=https://github.com/erxes/erxes-api)
+[![Deploy erxes API](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes API")](https://heroku.com/deploy?template=https://github.com/batnasan/erxes-api/tree/master)
 
 3.**Install erxes Widgets**
 
@@ -88,29 +86,13 @@ Now install erxes Widget app by clicking the deploy button below and set config 
 **Config vars:**
 
 ```sh
-API_GRAPHQL_URL = https://erxes-widget-api.herokuapp.com/graphql
 API_SUBSCRIPTIONS_URL = ws://erxes-api.herokuapp.com/subscriptions
 MAIN_API_URL = https://erxes.herokuapp.com
 PORT = 3200
 ROOT_URL = https://erxes-widget.herokuapp.com
 ```
 
-[![Deploy Widgets](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes Widgets")](https://heroku.com/deploy?template=https://github.com/erxes/erxes-widgets)
-
-4.**Install erxes Widgets API**
-
-You are doing great! And now it's time to install last app - erxes Widgets API.
-
-**Config vars:**
-
-```sh
-MONGO_URL = mongodb://localhost/erxes
-PORT = 3100
-RABBITMQ_HOST = amqp://localhost # we will update it later on
-WIDGET_URL = https://erxes-widget.herokuapp.com # we will update it later on
-```
-
-[![Deploy Widgets API](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes Widgets API")](https://heroku.com/deploy?template=https://github.com/erxes/erxes-widgets-api)
+[![Deploy Widgets](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes Widgets")](https://heroku.com/deploy?template=https://github.com/batnasasn/erxes-widgets/tree/master)
 
 Now go to Heroku dashboard and select the **erxes-api app** from the Apps tab.
 
