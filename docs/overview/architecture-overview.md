@@ -26,7 +26,7 @@ responsible for writing widgets data to database, sending a notification to erxe
 + <b><a href="https://www.mongodb.com/">MongoDB</a></b>
 
 <div>
-  <img src="https://erxes-docs.s3-us-west-2.amazonaws.com/erxes_architecture.svg" />
+  <img src="https://erxes-docs.s3-us-west-2.amazonaws.com/erxes_architecture.png" />
 </div>
 
 ---
