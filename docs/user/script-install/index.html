@@ -1,0 +1,1432 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Script installation · erxes</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;!--Content--&gt;"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Script installation · erxes"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.erxes.io/"/><meta property="og:description" content="&lt;!--Content--&gt;"/><meta property="og:image" content="https://docs.erxes.io/img/erxes.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.erxes.io/img/erxes.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-87254317-8"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-87254317-8');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/erxes.png" alt="erxes"/><h2 class="headerTitleWithLogo">erxes</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/overview/getting-started" target="_self">Docs</a></li><li class=""><a href="https://erxes.io/pricing" target="_blank">Pricing &amp; Trial</a></li><li class=""><a href="https://erxes.io/blog/" target="_blank">Blog</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>User&#x27;s Guide</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Overview<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/overview/getting-started">Getting  Started</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/architecture-overview">Architecture Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/deployment-overview">Deployment Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/integrations-overview">Integrations Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Installation Guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/installation/ubuntu">Ubuntu 16.04/18.04 LTS</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/docker">Docker</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/heroku">Heroku</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/kubernetes">Kubernetes</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/upgrade">Upgrade</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">User&#x27;s Guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/user/initial-setup">Initial Setup</a></li><li class="navListItem"><a class="navItem" href="/docs/user/general-settings">General Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/team-inbox">Team inbox</a></li><li class="navListItem"><a class="navItem" href="/docs/user/knowledge-base">Knowledge Base</a></li><li class="navListItem"><a class="navItem" href="/docs/user/popups">Popups</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/user/script-install">Script installation</a></li><li class="navListItem"><a class="navItem" href="/docs/user/contacts">Contacts</a></li><li class="navListItem"><a class="navItem" href="/docs/user/sales-pipeline">Sales pipeline</a></li><li class="navListItem"><a class="navItem" href="/docs/user/sales-pipeline-settings">Sales Team Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/engage">Engage</a></li><li class="navListItem"><a class="navItem" href="/docs/user/insights">Insights</a></li><li class="navListItem"><a class="navItem" href="/docs/user/email-templates">Email templates</a></li><li class="navListItem"><a class="navItem" href="/docs/user/third-party-integrations">Third party integrations</a></li><li class="navListItem"><a class="navItem" href="/docs/user/signing-in">Signing in</a></li><li class="navListItem"><a class="navItem" href="/docs/user/profile-settings">Profile settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/notification">Notifications</a></li><li class="navListItem"><a class="navItem" href="/docs/user/mobile-apps">Mobile Apps</a></li><li class="navListItem"><a class="navItem" href="/docs/user/subscription-getting-started">Subscription getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Administrator&#x27;s guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/administrator/creating-first-user">Creating first user</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/environment-variables">Environment Variables</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/file-upload">File Upload</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/integrations">Integrations</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/migration">Migration</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Developer&#x27;s guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/developer/developer">Developer</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/contributing">Contributing</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/graphql-api">GraphQL API</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/push-notifications">Push notifications</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/android-sdk">Android SDK</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/ios-sdk">iOS SDK</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/amazon-ses">AWS SES engage</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/erxes/docs/edit/master/docs/user/script-install.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Script installation</h1></header><article><div><span><!--Content-->
+<p>In the case of web messenger, knowledgebase, popups, you have to install some scripts on your website's code.
+In this section, we will demonstrate all the use-cases related to this topic.</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="quick-installation"></a><a href="#quick-installation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Quick installation</h2>
+<p>Basic steps to install scripts.</p>
+<h3><a class="anchor" aria-hidden="true" id="web-messenger"></a><a href="#web-messenger" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web messenger</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code"></a><a href="#step-1-copy-messenger-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>Go to Settings menu =&gt; Appstore.</li>
+<li>Click on the “Appstore” menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/messenger/i1.png" /></p>
+<ol start="3">
+<li>Then choose your messenger and click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/messenger/i2.png" /></p>
+<ol start="4">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/messenger/i3.png" /></p>
+<ol start="5">
+<li>If your website is single page app then you can choose a single-page app and copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/messenger/i4.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-your-web-source"></a><a href="#step-2--paste-the-code-in-your-web-source" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in your web source</h4>
+<ol start="6">
+<li>Paste the code in bottom of the body tag (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/messenger/i5.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result"></a><a href="#step-3-result" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="7">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/messenger/i6.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="pop-ups"></a><a href="#pop-ups" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pop-Ups</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-pop-ups-code"></a><a href="#step-1-copy-pop-ups-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy pop-ups code</h4>
+<ol>
+<li>Go to Pop-Ups menu from left sidebar (see the below figure).</li>
+<li>Click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/popup/i1.png" /></p>
+<ol start="3">
+<li>Copy the code (see the below figure)</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/popup/i2.png" /></p>
+<aside class="notice">
+<ul>
+<li><p>When you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Insert code section A and B onto the top of body tag in page of your website.</p></li>
+<li><p>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the code included in section “A” (see the above figure).</p></li>
+<li><p>If your pop-up flow type is &quot;Popup&quot; then you can choose the code section “B” (see the above figure).</p></li>
+<li><p>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</p></li>
+</ul>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-2-paste-the-code-in-your-web-source"></a><a href="#step-2-paste-the-code-in-your-web-source" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Paste the code in your web source</h4>
+<ol start="4">
+<li>Paste the code in bottom of the body tag on every page you want Erxes pop-ups to appear (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/popup/i3.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step3-result"></a><a href="#step3-result" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step3: Result</h4>
+<ol start="5">
+<li>Once you have pasted the code, it will look like this in your web (see the below figure)</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/popup/i4.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="knowledgebase"></a><a href="#knowledgebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Knowledgebase</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-knowledgebase-code"></a><a href="#step-1-copy-knowledgebase-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy knowledgebase code</h4>
+<ol>
+<li>Go to Knowledge Base menu from left sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i1.png" /></p>
+<ol start="2">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i2.png" /></p>
+<ol start="3">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i3.png" /></p>
+<aside class="notice">
+<ul>
+<li>Do not miss to copy the additional source of section “B” and copy it into top of body tag of the source code.</li>
+</ul>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-2-paste-the-code-in-your-web-source-1"></a><a href="#step-2-paste-the-code-in-your-web-source-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Paste the code in your web source</h4>
+<ol start="4">
+<li>Paste the code in bottom of body tag on every page you want Erxes knowledge base to appear (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i4.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step3-result-1"></a><a href="#step3-result-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step3: Result</h4>
+<ol start="5">
+<li>Once you have pasted the code, it will look like this in your web (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i5.png" /></p>
+<h2><a class="anchor" aria-hidden="true" id="google-tag-manager"></a><a href="#google-tag-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Google tag manager</h2>
+<p>Basic steps to install scripts.</p>
+<h3><a class="anchor" aria-hidden="true" id="install-google-tag-manager"></a><a href="#install-google-tag-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install google tag manager</h3>
+<ol>
+<li>Log in your google tag manager account.</li>
+<li>Click on the <strong>Admin</strong> from the dropdown menu, then choose the &quot;Install Google Tag Manager&quot; from the right sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/1.png" /></p>
+<ol start="3">
+<li>Copy the code as high in the <strong>head</strong> , then paste it onto head tag of every page of your website (see the below figure).</li>
+<li>Copy the code as high in the <strong>body</strong> , then paste it onto body tag of every page of your website (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/2.png" /></p>
+<ol start="5">
+<li>Paste the code of google tag manager onto the every page of your website (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/3.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="web-messenger-1"></a><a href="#web-messenger-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web messenger</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-1"></a><a href="#step-1-copy-messenger-code-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>Go to Settings menu =&gt; Appstore.</li>
+<li>Click on the “Appstore” menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/4.png" /></p>
+<ol start="3">
+<li>Then choose your messenger and click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/5.png" /></p>
+<ol start="4">
+<li>Copy the code of Basic Javascript (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/6.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-google-tag-manager"></a><a href="#step-2--paste-the-code-in-google-tag-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in google tag manager</h4>
+<ol start="5">
+<li>Log in your google tag manager account.</li>
+<li>Click the button “Add a new tag” (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/7.png" /></p>
+<ol start="7">
+<li>Click the Tag Configuration =&gt; Custom HTML (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/8.png" /></p>
+<ol start="8">
+<li>Paste the messenger code to Tag Configuration (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/9.png" /></p>
+<ol start="9">
+<li>After paste the code, configure to Triggering for All Pages (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/10.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-1"></a><a href="#step-3-result-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="7">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/33.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="pop-ups-1"></a><a href="#pop-ups-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pop-Ups</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-pop-ups-code-1"></a><a href="#step-1-copy-pop-ups-code-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy pop-ups code</h4>
+<ol>
+<li>Log in your Erxes account.</li>
+<li>Go to Pop-Ups menu from left sidebar (see the below figure).</li>
+<li>Click the install code button which you created the Pop Ups (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/12.png" /></p>
+<ol start="4">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/13.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2-paste-the-code-in-google-tag-manager"></a><a href="#step-2-paste-the-code-in-google-tag-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Paste the code in google tag manager</h4>
+<ol start="5">
+<li>Log in your google tag manager account.</li>
+<li>Click the button “Add a new tag” (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/14.png" /></p>
+<ol start="7">
+<li>Click the Tag Configuration =&gt; Custom HTML (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/15.png" /></p>
+<ol start="8">
+<li>Paste the code of Erxes pop-up (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/16.png" /></p>
+<ol start="9">
+<li>After paste the code, configure to Triggering for All Pages (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/17.png" /></p>
+<ol start="10">
+<li><p>When you edit again the script on Google tag manager, you have to click SAVE, then SUBMIT and PUBLISH it.</p></li>
+<li><p>If you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Follow the below steps.</p></li>
+<li><p>Go to Pop-Ups menu from left sidebar (see the below figure).</p></li>
+<li><p>Click on the install code button from the right side (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/18.png" /></p>
+<ol start="14">
+<li>Copy the code section A or section B.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/19.png" /></p>
+<aside class="notice">
+<ul>
+<li><p>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the code included in section “A” (see the above figure).</p></li>
+<li><p>If your pop-up flow type is &quot;Popup&quot; then you can choose the code section “B” (see the above figure).</p></li>
+<li><p>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</p></li>
+</ul>
+</aside>
+<ol start="15">
+<li>Paste code onto the body tag of web page source (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/20.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step3-result-2"></a><a href="#step3-result-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step3: Result</h4>
+<ol start="16">
+<li>Once you pasted the code, it will look like this in your web (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/21.png" /></p>
+<aside class="notice">
+<p>If you have encountered some mistakes, please make sure following steps:</p>
+<ol>
+<li>Verify the flow types and the additional source is right.</li>
+<li>Check the form id on Google tag manager and verify the form id on the web source.</li>
+<li>When you edit again the script on Google tag manager, make sure to save it and then submit and publish it.</li>
+<li>Make sure to configure the trigger in Google tag manager correctly.</li>
+</ol>
+</aside>
+<h3><a class="anchor" aria-hidden="true" id="knowledgebase-1"></a><a href="#knowledgebase-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Knowledgebase</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-knowledgebase-code-1"></a><a href="#step-1-copy-knowledgebase-code-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy knowledgebase code</h4>
+<ol>
+<li>Log in to your erxes account</li>
+<li>Go to Knowledge Base menu from left sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/22.png" /></p>
+<ol start="3">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/23.png" /></p>
+<ol start="4">
+<li>Copy the install code of knowledge base  (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/24.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2-paste-the-code-in-google-tag-manager-1"></a><a href="#step-2-paste-the-code-in-google-tag-manager-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Paste the code in google tag manager</h4>
+<ol start="5">
+<li>Log in to your google tag manager account.</li>
+<li>Click the button “Add a new tag” (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/25.png" /></p>
+<ol start="7">
+<li>Click the Tag Configuration=&gt; Custom HTML (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/26.png" /></p>
+<ol start="8">
+<li>Paste the code of Erxes knowledge base code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/27.png" /></p>
+<ol start="9">
+<li>After paste the code, configure to Triggering for All Pages (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/28.png" /></p>
+<ol start="10">
+<li><p>When you edit again the script on Google tag manager, you have to click SAVE, then SUBMIT and PUBLISH it.</p></li>
+<li><p>If you want to set an optional width and height of Knowledgebase scaling, follow the below steps.</p></li>
+<li><p>Go to Knowledge Base menu from left sidebar (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i1.png" /></p>
+<ol start="13">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i2.png" /></p>
+<ol start="14">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/29.png" /></p>
+<ol start="15">
+<li>Paste the code onto the top of body tag in web page source (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/30.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step3-result-3"></a><a href="#step3-result-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step3: Result</h4>
+<ol start="16">
+<li>Once you pasted the code, it will look like this in your web (see the below figure)</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/32.png" /></p>
+<h2><a class="anchor" aria-hidden="true" id="erxes-script-manager"></a><a href="#erxes-script-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Erxes script manager</h2>
+<p>Basic steps to install Erxes scripts.</p>
+<h3><a class="anchor" aria-hidden="true" id="web-messenger-2"></a><a href="#web-messenger-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web messenger</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-script-manager-code"></a><a href="#step-1-copy-script-manager-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy Script manager code</h4>
+<ol>
+<li>Log in your erxes account.</li>
+<li>Go to Settings menu =&gt; Script manager (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/16.png" /></p>
+<ol start="3">
+<li>Create new script to click NEW SCRIPT (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/17.png" /></p>
+<ol start="4">
+<li>Insert name and select the messenger that you created (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/18.png" /></p>
+<ol start="5">
+<li>Click on the install code button from the list (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/19.png" /></p>
+<ol start="6">
+<li>Copy the code that you created the messenger by clicking COPY TO CLIPBOARD (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/20.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-onto-your-script-manager"></a><a href="#step-2--paste-the-code-onto-your-script-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code onto your script manager</h4>
+<ol start="7">
+<li>Paste the code the top of body tag on every page you want Erxes script manager to appear (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/21.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-2"></a><a href="#step-3-result-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="8">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/22.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="pop-ups-2"></a><a href="#pop-ups-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pop-Ups</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-code-of-script-manager"></a><a href="#step-1-copy-code-of-script-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy code of Script manager</h4>
+<ol>
+<li>Log in your erxes account.</li>
+<li>Go to Settings menu =&gt; Script manager.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/23.png" /></p>
+<ol start="3">
+<li>Create new script to click NEW SCRIPT.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/24.png" /></p>
+<ol start="4">
+<li>Insert name and select the POP UPS that you created.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/25.png" /></p>
+<ol start="5">
+<li>Click on the install code button which you created POP UPS from the list (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/26.png" /></p>
+<ol start="6">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/27.png" /></p>
+<ol start="7">
+<li>If you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Go to Pop-ups feature, then select your created pop-ups and click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/28.png" /></p>
+<ol start="8">
+<li>Copy the code and paste it in top of body tag (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/29.png" /></p>
+<aside class="notice">
+<ul>
+<li><p>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the source included in  section “A”  (see the above figure).</p></li>
+<li><p>If your pop up-flow type is &quot;Popup&quot; then you can choose the source section “B” (see the above figure).</p></li>
+<li><p>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</p></li>
+</ul>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-2-paste-the-code-onto-your-script-manager"></a><a href="#step-2-paste-the-code-onto-your-script-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Paste the code onto your script manager</h4>
+<ol start="9">
+<li>Paste the code the bottom of body tag on every page you want Erxes pop-ups to appear (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/30.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step3-result-4"></a><a href="#step3-result-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step3: Result</h4>
+<ol start="10">
+<li>Once you have pasted the code, it will look like this in your web (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/31.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="knowledgebase-2"></a><a href="#knowledgebase-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Knowledgebase</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-knowledgebase-code-of-script-manager"></a><a href="#step-1-copy-knowledgebase-code-of-script-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy knowledgebase code of Script manager</h4>
+<ol>
+<li><p>Log in to your erxes account.</p></li>
+<li><p>Go to Settings menu =&gt; Script manager.</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/32.png" /></p>
+<ol start="3">
+<li>Create new script to click NEW SCRIPT.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/33.png" /></p>
+<ol start="4">
+<li>Insert name and select the KNOWLEDGEBASE TOPIC that you was created before (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/34.png" /></p>
+<ol start="5">
+<li>Click on the install code button which you created KNOWLEDGEBASE TOPIC from the list (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/35.png" /></p>
+<ol start="6">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/27.png" /></p>
+<ol start="7">
+<li><p>If you want to set an optional width and height of Knowledgebase scaling, follow the below steps.</p></li>
+<li><p>Go to Knowledge Base menu from left sidebar (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i1.png" /></p>
+<ol start="9">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i2.png" /></p>
+<ol start="10">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/29.png" /></p>
+<ol start="11">
+<li>Paste the code onto the top of body tag in web page source (see the below figure).</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="step-2-paste-the-code-onto-your-script-manager-1"></a><a href="#step-2-paste-the-code-onto-your-script-manager-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Paste the code onto your script manager</h4>
+<ol start="12">
+<li>Paste the script code the bottom of body tag on every page that you want Erxes script manager to appear (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/39.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step3-result-5"></a><a href="#step3-result-5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step3: Result</h4>
+<ol start="13">
+<li>Once you have pasted the code, it will look like this in your web (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/40.png" /></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="advanced-setup"></a><a href="#advanced-setup" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advanced setup</h2>
+<p>Advanced steps to install scripts.</p>
+<h3><a class="anchor" aria-hidden="true" id="get-data-from-your-web-app-for-logged-in-users"></a><a href="#get-data-from-your-web-app-for-logged-in-users" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Get data from your web app (for logged-in users)</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1copy-messenger-install-code"></a><a href="#step-1copy-messenger-install-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1:Copy messenger install code.</h4>
+<ol>
+<li>Go to Settings menu =&gt; Appstore.</li>
+<li>Click on the “Appstore” menu (see the below figure).</li>
+</ol>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/1.Appstore.png /></p>
+<ol start="3">
+<li>Then choose your messenger and click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/2.+List.png /></p>
+<ol start="4">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/3.+Source+1.png /></p>
+<ol start="5">
+<li>If your website is single page app then you can choose a single-page app and copy the code (see the below figure).</li>
+</ol>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/4.+Source+2.png /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2-paste-the-code-in-the-bottom-of-the-body-tag-see-the-below-figure"></a><a href="#step-2-paste-the-code-in-the-bottom-of-the-body-tag-see-the-below-figure" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Paste the code in the bottom of the body tag (see the below figure).</h4>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/5.+Source+3.png /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-if-you-want-to-get-user-email-phone--and-code-automatically--you-can-write-under-brand-id-in-your-code"></a><a href="#step-3-if-you-want-to-get-user-email-phone--and-code-automatically--you-can-write-under-brand-id-in-your-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: If you want to get user email, phone  and code automatically.  You can write under brand id in your code:</h4>
+<pre><code class="hljs">
+email: ”&lt;Logged <span class="hljs-keyword">in</span><span class="hljs-built_in"> user </span>email&gt;”,
+
+phone: “&lt;Logged <span class="hljs-keyword">in</span><span class="hljs-built_in"> user </span>phone&gt;”,
+
+code:”&lt;Arbitrary unique value&gt;<span class="hljs-string">",
+
+</span></code></pre>
+<p>(see the below figure).</p>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/6.+Source+4.png /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-4-after-you-edit-you-will-see-user-email-phone-and-code-will-be-automatically-displayed-on-the-right-sidebar"></a><a href="#step-4-after-you-edit-you-will-see-user-email-phone-and-code-will-be-automatically-displayed-on-the-right-sidebar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 4: After you edit you will see user email, phone, and code will be automatically displayed on the right sidebar.</h4>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/7.+Result+1.png /></p>
+<p>
+<aside class="notice">
+<p>Email, phone, and code fields are automatically filled out by user profile.</p>
+</aside>
+</p>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/8.+Result+2.png /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-5-if-you-want-to-get-firstname-lastname-bio-automatically--you-can-write-under-brand-id-in-your-code"></a><a href="#step-5-if-you-want-to-get-firstname-lastname-bio-automatically--you-can-write-under-brand-id-in-your-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 5: If you want to get firstname, lastname, bio automatically.  You can write under brand id in your code:</h4>
+<pre><code class="hljs">data :{
+<span class="hljs-symbol">
+firstName:</span>”<span class="hljs-params">&lt;Firstname&gt;</span>”,
+<span class="hljs-symbol">
+lastName:</span>”<span class="hljs-params">&lt;LastName&gt;</span>”,
+<span class="hljs-symbol">
+bio:</span>”<span class="hljs-params">&lt;Bio&gt;</span>”,
+
+}
+</code></pre>
+<p>(see the below figure).</p>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/9.+Source+5.png /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-6--after-you-edit-you-will-see-user-firstname-lastname-and-bio-will-be-automatically-displayed-on-the-right-sidebar"></a><a href="#step-6--after-you-edit-you-will-see-user-firstname-lastname-and-bio-will-be-automatically-displayed-on-the-right-sidebar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 6:  After you edit you will see user firstname, lastname and bio will be automatically displayed on the right sidebar.</h4>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/10.+Result+3.png /></p>
+<p>
+<aside class="notice">
+<p>Firstname, Lastname, and bio fields are automatically filled out by user profile.</p>
+</aside>
+</p>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/11.+Result+4.png /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-7---also-if-you-want-to-get-any-data-of-your-web-app--automatically--you-can-just-write-in-your-source-code-inside-the-data-section-see-the-below-figure"></a><a href="#step-7---also-if-you-want-to-get-any-data-of-your-web-app--automatically--you-can-just-write-in-your-source-code-inside-the-data-section-see-the-below-figure" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 7:   Also If you want to get any data of your Web app  automatically.  You can just write in your source code inside the data section. (See the below figure).</h4>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/13.+Source+6.png /></p>
+<p>
+<aside class="notice">
+<p>These fields are displayed in the messenger data section on the right sidebar.</p>
+</aside>
+</p>
+<p><img src=https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/12.+Result+5.png /></p>
+<h2><a class="anchor" aria-hidden="true" id="advanced-combination-installation"></a><a href="#advanced-combination-installation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advanced combination installation</h2>
+<p>In the advanced combination installation is described combination of the following features.</p>
+<ul>
+<li>Messenger + Pop-Ups (or Knowledgebase)</li>
+<li>Messenger + Pop-Ups + Knowledgebase (called M+P+K)</li>
+<li>(M+P+K) + Pop-Ups</li>
+<li>(M+P+K) + Knowledgebase</li>
+<li>(M+P+K) + Pop-Ups + Knowledgebase</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="web-messenger--pop-ups-or-knowledgebase"></a><a href="#web-messenger--pop-ups-or-knowledgebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web messenger + Pop-Ups (or Knowledgebase)</h3>
+<p>This is the script install instruction of Messenger contains Pop-Ups form or Messenger contains Knowledgebase form. Basic instruction is going through same steps and emphasized steps for difference bewteen Pop-Ups and Knowledbase form in (from 3 to 6).</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-2"></a><a href="#step-1-copy-messenger-code-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>Go to Settings menu =&gt; Appstore.</li>
+<li>You need to make sure the brand name that you created messenger (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/1.png" /></p>
+<p><strong>Web messenger + Pop-Ups</strong></p>
+<ol start="3">
+<li>Click the Add button of Pop-Ups in order to connect the messenger.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/2.png" /></p>
+<ol start="4">
+<li>Add Pop Ups (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/3.png" /></p>
+<ol start="5">
+<li>Make sure MESSENGER INTEGRATION brand name is same as your created messenger (see the above figure section A and below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/4.png" /></p>
+<ol start="6">
+<li>Make sure POP UPS brand name is same as your created Pop-Ups (see the above figure section B).</li>
+</ol>
+<p><strong>Web messenger + Knowledgebase</strong></p>
+<ol start="3">
+<li>Click the Add button of Knowledge Base in order to connect the messenger.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/10.png" /></p>
+<ol start="4">
+<li>Add knowledge base (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/11.png" /></p>
+<ol start="5">
+<li>Make sure MESSENGER INTEGRATION brand name is same as your created messenger (see the above figure section A and below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/12.png" /></p>
+<ol start="6">
+<li><p>In this case, different brand name of Messenger and  Knowledgebase can be run normal.</p></li>
+<li><p>Go to Messenger and click on the install code button from the right side (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/5.png" /></p>
+<ol start="8">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/6.png" /></p>
+<ol start="9">
+<li>If your website is single page app then you can choose a single-page app and copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/7.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-your-web-source-1"></a><a href="#step-2--paste-the-code-in-your-web-source-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in your web source</h4>
+<ol start="10">
+<li>Paste the Messenger script code in the bottom of the body tag. In this case, Messenger + Knowledgebase code is similar to Messenger + Pop-Ups.   (see the below figure).</li>
+</ol>
+<p><strong>Messenger+Pop-Ups script code.</strong></p>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/8.png" /></p>
+<p><strong>Messenger+Knowledgebase script code.</strong></p>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/13.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-3"></a><a href="#step-3-result-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="11">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).
+<strong>Messenger+Pop-Ups</strong></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/9.png" /></p>
+<p><strong>Messenger+Knowledgebase</strong></p>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/14.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="web-messenger--pop-ups--knowledgebase-mpk"></a><a href="#web-messenger--pop-ups--knowledgebase-mpk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web messenger + Pop-Ups + Knowledgebase (M+P+K)</h3>
+<p>This is the install instruction of Messenger contains Pop-Ups and Knowledgebase form combination (M+P+K). Next following combinations are expanded to this combination which refers to (M+P+K) + Pop-Ups, (M+P+K)+Knowledgebase and (M+P+K)+Knowledgebase+Pop-Ups.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-3"></a><a href="#step-1-copy-messenger-code-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>Go to Settings menu =&gt; Appstore.</li>
+<li>You need to make sure the brand name that you created messenger (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/1.png" /></p>
+<ol start="3">
+<li>Click the Add button of Knowledge Base in order to connect the messenger.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/10.png" /></p>
+<ol start="4">
+<li>Add knowledge base (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/11.png" /></p>
+<ol start="5">
+<li>Make sure MESSENGER INTEGRATION brand name is same as your created messenger (see the above figure section A and below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/12.png" /></p>
+<ol start="6">
+<li>Then you need to connect Pop-Ups. Click the add button of Pop Ups.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/2.png" /></p>
+<ol start="7">
+<li>Add Pop Ups (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/3.png" /></p>
+<ol start="8">
+<li>Make sure MESSENGER INTEGRATION brand name is same as your created messenger (see the above figure section A and below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/4.png" /></p>
+<ol start="9">
+<li><p>Make sure POP UPS brand name is same as your created Pop-Ups (see the above figure section B).</p></li>
+<li><p>Go to Messenger and click on the install code button from the right side (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/5.png" /></p>
+<ol start="11">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/6.png" /></p>
+<ol start="12">
+<li>If your website is single page app then you can choose a single-page app and copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/7.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-your-web-source-2"></a><a href="#step-2--paste-the-code-in-your-web-source-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in your web source</h4>
+<ol start="13">
+<li>Paste the code in the bottom of the body tag (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/13.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-4"></a><a href="#step-3-result-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="11">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure). Click the support button to show Pop-Up form.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/14.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="m--p--k--pop-ups"></a><a href="#m--p--k--pop-ups" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>(M + P + K) + Pop-Ups</h3>
+<p>This is the script install instruction of Pop-Ups form with Messenger which contains Pop-Ups and Knowledgebase form.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-4"></a><a href="#step-1-copy-messenger-code-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>In this combination, first you need to follow the instruction of (M+P+K). Click to the link and check reference.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups--knowledgebase-mpk"><strong>(M + P + K)</strong></a></p>
+<ol start="2">
+<li>Go to Pop-Ups menu from left sidebar (see the below figure).</li>
+<li>Click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/15.png" /></p>
+<ol start="4">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/16.png" /></p>
+<aside class="notice">
+<ul>
+<li><p>When you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Insert code section A and B onto the top of body tag in page of your website.</p></li>
+<li><p>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the code included in section “A” (see the above figure).</p></li>
+<li><p>If your pop-up flow type is &quot;Popup&quot; then you can choose the code section “B” (see the above figure).</p></li>
+<li><p>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</p></li>
+</ul>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-your-web-source-3"></a><a href="#step-2--paste-the-code-in-your-web-source-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in your web source</h4>
+<ol start="5">
+<li>Paste the code in the bottom of the body tag (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/17.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-5"></a><a href="#step-3-result-5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="6">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/18.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="m--p--k--knowledgebase"></a><a href="#m--p--k--knowledgebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>(M + P + K) + Knowledgebase</h3>
+<p>This is the script install instruction of Knowledgebase form with Messenger which contains Pop-Ups and Knowledgebase form.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-5"></a><a href="#step-1-copy-messenger-code-5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>In this combination, first you need to follow the instruction of  (M+P+K). Click to the link and check reference.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups--knowledgebase-mpk"><strong>(M + P + K)</strong></a></p>
+<ol start="2">
+<li>Go to Knowledge Base menu from left sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/19.png" /></p>
+<ol start="3">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from the dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/20.png" /></p>
+<ol start="4">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/21.png" /></p>
+<aside class="notice">
+<ul>
+<li>Do not miss to copy the additional source of section “B” and copy it into top of body tag of the source code.</li>
+</ul>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-your-web-source-4"></a><a href="#step-2--paste-the-code-in-your-web-source-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in your web source</h4>
+<ol start="5">
+<li>Paste the code in the bottom of the body tag (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/22.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-6"></a><a href="#step-3-result-6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="6">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/23.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="m--p--k--pop-ups--knowledgebase"></a><a href="#m--p--k--pop-ups--knowledgebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>(M + P + K) + Pop-Ups + Knowledgebase</h3>
+<p>This is the script install instruction of Pop-Ups, Knowledgebase form with Messenger which contains Pop-Ups and Knowledgebase form.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-6"></a><a href="#step-1-copy-messenger-code-6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>In this combination, first you need to follow the instruction of  (M+P+K). Click to the link and check reference.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups--knowledgebase-mpk"><strong>(M + P + K)</strong></a></p>
+<ol start="2">
+<li>Go to Pop-Ups menu from left sidebar (see the below figure).</li>
+<li>Click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/15.png" /></p>
+<ol start="4">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/16.png" /></p>
+<aside class="notice">
+<p>When you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Insert code section A and B onto the top of body tag in page of your website.</p>
+<ul>
+<li>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the code included in section “A” (see the above figure).</li>
+<li>If your pop-up flow type is &quot;Popup&quot; then you can choose the code section “B” (see the above figure).</li>
+<li>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</li>
+</ul>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-your-web-source-5"></a><a href="#step-2--paste-the-code-in-your-web-source-5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in your web source</h4>
+<ol start="5">
+<li>Paste the code in the bottom of the body tag (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/17.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-copy-the-code-of-knowledgebase"></a><a href="#step-3-copy-the-code-of-knowledgebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Copy the code of Knowledgebase</h4>
+<ol start="5">
+<li>Go to Knowledge Base menu from left sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/19.png" /></p>
+<ol start="6">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from the dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/20.png" /></p>
+<ol start="7">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/21.png" /></p>
+<aside class="notice">
+<p>Do not miss to copy the additional source of section “B” and copy it into top of body tag of the source code.</p>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-4--paste-the-code-in-your-web-source"></a><a href="#step-4--paste-the-code-in-your-web-source" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 4:  Paste the code in your web source</h4>
+<ol start="8">
+<li>Paste the code in the bottom of the body tag (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/24.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-7"></a><a href="#step-3-result-7" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="9">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/7.png" /></p>
+<h2><a class="anchor" aria-hidden="true" id="advanced-google-tag-manager"></a><a href="#advanced-google-tag-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advanced Google tag manager</h2>
+<p>In the advanced google tag manager installation is described combination of the following features.</p>
+<ul>
+<li>Messenger + Pop-Ups (or Knowledgebase)</li>
+<li>Messenger + Pop-Ups + Knowledgebase (M+P+K)</li>
+<li>(M+P+K) + Pop-Ups</li>
+<li>(M+P+K) + Knowledgebase</li>
+<li>(M+P+K) + Pop-Ups + Knowledgebase</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="install-google-tag-manager-1"></a><a href="#install-google-tag-manager-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install google tag manager</h3>
+<ol>
+<li>Log in your google tag manager account.</li>
+<li>Click on the <strong>Admin</strong> from the dropdown menu, then choose the &quot;Install Google Tag Manager&quot; from the right sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/1.png" /></p>
+<ol start="3">
+<li>Copy the code as high in the <strong>head</strong> , then paste it onto head tag of every page of your website (see the below figure).</li>
+<li>Copy the code as high in the <strong>body</strong> , then paste it onto body tag of every page of your website (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/2.png" /></p>
+<ol start="5">
+<li>Paste the code of google tag manager onto the every page of your website (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/3.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="web-messenger--pop-ups-or-knowledgebase-1"></a><a href="#web-messenger--pop-ups-or-knowledgebase-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web messenger + Pop-Ups (or Knowledgebase)</h3>
+<p>This is the script install instruction of Messenger contains Pop-Ups form or Messenger contains Knowledgebase form in Google tag manager. Basic instruction is going through same steps and emphasized steps for difference bewteen Pop-Ups and Knowledbase form in (3 to 6 and 16 to 20).</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-7"></a><a href="#step-1-copy-messenger-code-7" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>Go to Settings menu =&gt; Appstore.</li>
+<li>You need to make sure the brand name that you created messenger (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/1.png" /></p>
+<p><strong>Web messenger + Pop-Ups</strong></p>
+<ol start="3">
+<li>Click the Add button of Pop-Ups in order to connect the messenger.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/2.png" /></p>
+<ol start="4">
+<li>Add Pop Ups (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/3.png" /></p>
+<ol start="5">
+<li>Make sure MESSENGER INTEGRATION brand name is same as your created messenger (see the above figure section A and below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/4.png" /></p>
+<ol start="6">
+<li>Make sure POP UPS brand name is same as your created Pop-Ups (see the above figure section B).</li>
+</ol>
+<p><strong>Web messenger + Knowledgebase</strong></p>
+<ol start="3">
+<li>Click the Add button of Knowledge Base in order to connect the messenger.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/10.png" /></p>
+<ol start="4">
+<li>Add knowledge base (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/11.png" /></p>
+<ol start="5">
+<li>Make sure MESSENGER INTEGRATION brand name is same as your created messenger (see the above figure section A and below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/12.png" /></p>
+<ol start="6">
+<li><p>In this case, different brand name of Messenger and  Knowledgebase can be run normal.</p></li>
+<li><p>Go to Messenger and click on the install code button from the right side (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/5.png" /></p>
+<ol start="8">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/6.png" /></p>
+<ol start="9">
+<li>If your website is single page app then you can choose a single-page app and copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/7.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-google-tag-manager-1"></a><a href="#step-2--paste-the-code-in-google-tag-manager-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in google tag manager</h4>
+<ol start="10">
+<li>Log in your google tag manager account.</li>
+<li>Click the button “Add a new tag” (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/14.png" /></p>
+<ol start="12">
+<li>Click the Tag Configuration =&gt; Custom HTML (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/15.png" /></p>
+<ol start="13">
+<li>Paste the code of Erxes pop-up (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/16.png" /></p>
+<ol start="14">
+<li>After paste the code, configure to Triggering for All Pages (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/17.png" /></p>
+<ol start="15">
+<li>When you edit again the script on Google tag manager, you have to click SAVE, then SUBMIT and PUBLISH it.</li>
+</ol>
+<p><strong>Messenger+Pop-Ups</strong></p>
+<ol start="16">
+<li><p>If you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Follow the below steps.</p></li>
+<li><p>Go to Pop-Ups menu from left sidebar (see the below figure).</p></li>
+<li><p>Click on the install code button from the right side (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/18.png" /></p>
+<ol start="19">
+<li>Copy the code section A or section B.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/19.png" /></p>
+<aside class="notice">
+<ul>
+<li><p>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the code included in section “A” (see the above figure).</p></li>
+<li><p>If your pop-up flow type is &quot;Popup&quot; then you can choose the code section “B” (see the above figure).</p></li>
+<li><p>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</p></li>
+</ul>
+</aside>
+<ol start="20">
+<li>Paste code onto the body tag of web page source (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/20.png" /></p>
+<p><strong>Messenger+Knowledgebase</strong></p>
+<ol start="16">
+<li>If you want to set an optional width and height of Knowledgebase scaling, follow the below steps. Go to Knowledge Base menu from left sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i1.png" /></p>
+<ol start="17">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i2.png" /></p>
+<ol start="18">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/29.png" /></p>
+<ol start="19">
+<li>Paste the code onto the top of body tag in web page source (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/gtm5.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-8"></a><a href="#step-3-result-8" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="21">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><strong>Messenger+Pop-Ups</strong>
+<img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/9.png" /></p>
+<p><strong>Messenger+Knowledgebase</strong></p>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/14.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="web-messenger--pop-ups--knowledgebase-mpk-1"></a><a href="#web-messenger--pop-ups--knowledgebase-mpk-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web messenger + Pop-Ups + Knowledgebase (M+P+K)</h3>
+<p>This is the install instruction of messenger based popup and knowledgebase combination (M+P+K). Next following combinations are expanded to this combination which refers to (M+P+K) + Pop-Ups, (M+P+K)+Knowledgebase and (M+P+K)+Knowledgebase+Pop-Ups.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-8"></a><a href="#step-1-copy-messenger-code-8" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>Go to Settings menu =&gt; Appstore.</li>
+<li>You need to make sure the brand name that you created messenger (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/1.png" /></p>
+<ol start="3">
+<li>Click the Add button of Knowledge Base in order to connect the messenger.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/10.png" /></p>
+<ol start="4">
+<li>Add knowledge base (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/11.png" /></p>
+<ol start="5">
+<li>Make sure MESSENGER INTEGRATION brand name is same as your created messenger (see the above figure section A and below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/12.png" /></p>
+<ol start="6">
+<li>Then you need to connect Pop-Ups. Click the add button of Pop Ups.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/2.png" /></p>
+<ol start="7">
+<li>Add Pop Ups (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/3.png" /></p>
+<ol start="8">
+<li>Make sure MESSENGER INTEGRATION brand name is same as your created messenger (see the above figure section A and below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/4.png" /></p>
+<ol start="9">
+<li><p>Make sure POP UPS brand name is same as your created Pop-Ups (see the above figure section B).</p></li>
+<li><p>Go to Messenger and click on the install code button from the right side (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/5.png" /></p>
+<ol start="11">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/6.png" /></p>
+<ol start="12">
+<li>If your website is single page app then you can choose a single-page app and copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/7.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2-paste-the-code-in-google-tag-manager-2"></a><a href="#step-2-paste-the-code-in-google-tag-manager-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Paste the code in google tag manager</h4>
+<ol start="13">
+<li>Log in to your google tag manager account.</li>
+<li>Click the button “Add a new tag” (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/25.png" /></p>
+<ol start="15">
+<li>Click the Tag Configuration=&gt; Custom HTML (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/26.png" /></p>
+<ol start="16">
+<li>Paste the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/27.png" /></p>
+<ol start="17">
+<li>After paste the code, configure to Triggering for All Pages (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/28.png" /></p>
+<ol start="18">
+<li><p>When you edit again the script on Google tag manager, you have to click SAVE, then SUBMIT and PUBLISH it.</p></li>
+<li><p>If you want to set an optional width and height of Knowledgebase scaling, follow the below steps.</p></li>
+<li><p>Go to Knowledge Base menu from left sidebar (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i1.png" /></p>
+<ol start="21">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/kb/i2.png" /></p>
+<ol start="22">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/29.png" /></p>
+<ol start="23">
+<li>Paste the code onto the top of body tag in web page source (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/30.png" /></p>
+<ol start="24">
+<li><p>If you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Follow the below steps.</p></li>
+<li><p>Go to Pop-Ups menu from left sidebar (see the below figure).</p></li>
+<li><p>Click on the install code button from the right side (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/18.png" /></p>
+<ol start="27">
+<li>Copy the code section A or section B.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/19.png" /></p>
+<aside class="notice">
+<ul>
+<li><p>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the code included in section “A” (see the above figure).</p></li>
+<li><p>If your pop-up flow type is &quot;Popup&quot; then you can choose the code section “B” (see the above figure).</p></li>
+<li><p>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</p></li>
+</ul>
+</aside>
+<ol start="28">
+<li>Paste code onto the body tag of web page source (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/gtm4.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-9"></a><a href="#step-3-result-9" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="29">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/14.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="m--p--k--pop-ups-1"></a><a href="#m--p--k--pop-ups-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>(M + P + K) + Pop-Ups</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-9"></a><a href="#step-1-copy-messenger-code-9" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>In this combination, first you need to follow the instruction of (M+P+K). Click to the link and check reference.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups--knowledgebase-mpk-1"><strong>(M + P + K)</strong></a></p>
+<ol start="2">
+<li>Go to Pop-Ups menu from left sidebar (see the below figure).</li>
+<li>Click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/15.png" /></p>
+<ol start="4">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/16.png" /></p>
+<aside class="notice">
+<ul>
+<li><p>When you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Insert code section A and B onto the top of body tag in page of your website.</p></li>
+<li><p>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the code included in section “A” (see the above figure).</p></li>
+<li><p>If your pop-up flow type is &quot;Popup&quot; then you can choose the code section “B” (see the above figure).</p></li>
+<li><p>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</p></li>
+</ul>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-google-tag-manager-2"></a><a href="#step-2--paste-the-code-in-google-tag-manager-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in google tag manager</h4>
+<ol start="10">
+<li>Log in your google tag manager account.</li>
+<li>Click the button “Add a new tag” (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/14.png" /></p>
+<ol start="12">
+<li>Click the Tag Configuration =&gt; Custom HTML (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/15.png" /></p>
+<ol start="13">
+<li>Paste the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/gtm1.png" /></p>
+<ol start="14">
+<li>After paste the code, configure to Triggering for All Pages (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/17.png" /></p>
+<ol start="15">
+<li><p>When you edit again the script on Google tag manager, you have to click SAVE, then SUBMIT and PUBLISH it.</p></li>
+<li><p>If you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Follow the below steps.</p></li>
+<li><p>Go to Pop-Ups menu from left sidebar (see the below figure).</p></li>
+<li><p>Click on the install code button from the right side (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/18.png" /></p>
+<ol start="19">
+<li>Copy the code section A or section B.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/19.png" /></p>
+<ol start="20">
+<li>Paste code onto the body tag of web page source (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/20.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-10"></a><a href="#step-3-result-10" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="21">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/18.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="m--p--k--knowledgebase-1"></a><a href="#m--p--k--knowledgebase-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>(M + P + K) + Knowledgebase</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-10"></a><a href="#step-1-copy-messenger-code-10" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>In this combination, first you need to follow the instruction of  (M+P+K). Click to the link and check reference.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups--knowledgebase-mpk-1"><strong>(M + P + K)</strong></a></p>
+<ol start="2">
+<li>Go to Knowledge Base menu from left sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/19.png" /></p>
+<ol start="3">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from the dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/20.png" /></p>
+<ol start="4">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/21.png" /></p>
+<aside class="notice">
+<ul>
+<li>Do not miss to copy the additional source of section “B” and copy it into top of body tag of the source code.</li>
+</ul>
+</aside>
+5. Paste code onto the body tag of web page source (see the below figure).
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/gtm5.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-google-tag-manager-3"></a><a href="#step-2--paste-the-code-in-google-tag-manager-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in google tag manager</h4>
+<ol start="6">
+<li>Log in your google tag manager account.</li>
+<li>Click the button “Add a new tag” (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/14.png" /></p>
+<ol start="8">
+<li>Click the Tag Configuration =&gt; Custom HTML (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/15.png" /></p>
+<ol start="9">
+<li>Paste the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/gtm2.png" /></p>
+<ol start="10">
+<li>After paste the code, configure to Triggering for All Pages (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/17.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-11"></a><a href="#step-3-result-11" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="11">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/23.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="m--p--k--pop-ups--knowledgebase-1"></a><a href="#m--p--k--pop-ups--knowledgebase-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>(M + P + K) + Pop-Ups + Knowledgebase</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-11"></a><a href="#step-1-copy-messenger-code-11" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>In this combination, first you need to follow the instruction of  (M+P+K). Click to the link and check reference.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups--knowledgebase-mpk-1"><strong>(M + P + K)</strong></a></p>
+<ol start="2">
+<li>Go to Pop-Ups menu from left sidebar (see the below figure).</li>
+<li>Click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/15.png" /></p>
+<ol start="4">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/16.png" /></p>
+<aside class="notice">
+<p>When you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Insert code section A and B onto the top of body tag in page of your website.</p>
+<ul>
+<li>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the code included in section “A” (see the above figure).</li>
+<li>If your pop-up flow type is &quot;Popup&quot; then you can choose the code section “B” (see the above figure).</li>
+<li>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</li>
+</ul>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-google-tag-manager-4"></a><a href="#step-2--paste-the-code-in-google-tag-manager-4" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in google tag manager</h4>
+<ol start="10">
+<li>Log in your google tag manager account.</li>
+<li>Click the button “Add a new tag” (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/14.png" /></p>
+<ol start="12">
+<li>Click the Tag Configuration =&gt; Custom HTML (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/15.png" /></p>
+<ol start="13">
+<li>Paste the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/gtm1.png" /></p>
+<ol start="14">
+<li>After paste the code, configure to Triggering for All Pages (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/17.png" /></p>
+<ol start="15">
+<li><p>When you edit again the script on Google tag manager, you have to click SAVE, then SUBMIT and PUBLISH it.</p></li>
+<li><p>If you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Follow the below steps.</p></li>
+<li><p>Go to Pop-Ups menu from left sidebar (see the below figure).</p></li>
+<li><p>Click on the install code button from the right side (see the below figure).</p></li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/18.png" /></p>
+<ol start="19">
+<li>Copy the code section A or section B.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/19.png" /></p>
+<ol start="20">
+<li>Paste code onto the body tag of web page source (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/20.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-copy-the-code-of-knowledgebase-1"></a><a href="#step-3-copy-the-code-of-knowledgebase-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Copy the code of Knowledgebase</h4>
+<ol start="21">
+<li>Go to Knowledge Base menu from left sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/19.png" /></p>
+<ol start="22">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from the dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/20.png" /></p>
+<ol start="23">
+<li>Copy the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/21.png" /></p>
+<aside class="notice">
+<p>Do not miss to copy the additional source of section “B” and copy it into top of body tag of the source code.</p>
+</aside>
+<h4><a class="anchor" aria-hidden="true" id="step-4--paste-the-code-in-google-tag-manager"></a><a href="#step-4--paste-the-code-in-google-tag-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 4:  Paste the code in google tag manager</h4>
+<ol start="24">
+<li>Log in your google tag manager account.</li>
+<li>Click the button “Add a new tag” (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/14.png" /></p>
+<ol start="26">
+<li>Click the Tag Configuration =&gt; Custom HTML (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/15.png" /></p>
+<ol start="27">
+<li>Paste the code (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/gtm3.png" /></p>
+<ol start="28">
+<li>After paste the code, configure to Triggering for All Pages (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/google-tag-manager/17.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-5-result"></a><a href="#step-5-result" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 5: Result</h4>
+<ol start="29">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/25.png" /></p>
+<h2><a class="anchor" aria-hidden="true" id="advanced-erxes-script-manager"></a><a href="#advanced-erxes-script-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advanced Erxes script manager</h2>
+<p>In the advanced Erxes script manager installation instruction is described combination of the following features.</p>
+<ul>
+<li>Messenger + Pop-Ups (or Knowledgebase)</li>
+<li>Messenger + Pop-Ups + Knowledgebase (M+P+K)</li>
+<li>(M+P+K) + Pop-Ups</li>
+<li>(M+P+K) + Knowledgebase</li>
+<li>(M+P+K) + Pop-Ups + Knowledgebase</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="web-messenger--pop-ups-or-knowledgebase-2"></a><a href="#web-messenger--pop-ups-or-knowledgebase-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web messenger + Pop-Ups (or Knowledgebase)</h3>
+<p>This is the script install instruction of Messenger contains Pop-Ups form or Messenger contains Knowledgebase form in Erxes script manager.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-create-a-messenger-contains-pop-ups-or-messenger-contains-knowledgebase"></a><a href="#step-1-create-a-messenger-contains-pop-ups-or-messenger-contains-knowledgebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Create a messenger contains Pop-Ups or messenger contains knowledgebase.</h4>
+<ol>
+<li>Go to Advanced combination installation =&gt; Web messenger + Pop-Ups (or Knowledgebase).</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups-or-knowledgebase"><strong>Advanced combination installation</strong></a></p>
+<ol start="2">
+<li>Then follow steps number from 1 to 6 of the instruction for Web messenger + Pop-Ups (or Knowledgebase).</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="step-2-copy-script-and-paste-the-code"></a><a href="#step-2-copy-script-and-paste-the-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Copy script and paste the code</h4>
+<ol start="3">
+<li>After that, follow the instruction of Erxes script manager =&gt; Web messenger. The messenger, you have to select which you created messenger.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger-2"><strong>Erxes script installation</strong></a></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-12"></a><a href="#step-3-result-12" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="4">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><strong>Messenger+Pop-Ups</strong></p>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/9.png" /></p>
+<p><strong>Messenger+Knowledgebase</strong></p>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/14.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="web-messenger--pop-ups--knowledgebase-mpk-2"></a><a href="#web-messenger--pop-ups--knowledgebase-mpk-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Web messenger + Pop-Ups + Knowledgebase (M+P+K)</h3>
+<p>This is the install instruction of messenger based popup and knowledgebase combination (M+P+K). Next following combinations are expanded to this combination which refers to (M+P+K) + Pop-Ups, (M+P+K)+Knowledgebase and (M+P+K)+Knowledgebase+Pop-Ups.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-create-a-messenger-contains-both-pop-ups-and-knowledgebase"></a><a href="#step-1-create-a-messenger-contains-both-pop-ups-and-knowledgebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Create a messenger contains both Pop-Ups and Knowledgebase.</h4>
+<ol>
+<li>Go to Advanced combination installation =&gt; Web messenger + Pop-Ups + Knowledgebase.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups--knowledgebase-mpk"><strong>Advanced combination installation</strong></a></p>
+<ol start="2">
+<li>Then follow steps number from 1 to 9 of the instruction for Web messenger + Pop-Ups + Knowledgebase.</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="step-2-copy-script-and-paste-the-code-1"></a><a href="#step-2-copy-script-and-paste-the-code-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Copy script and paste the code</h4>
+<ol start="3">
+<li>After that, follow the instruction of Erxes script manager =&gt; Web messenger. The messenger, you have to select which you created messenger.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger-2"><strong>Erxes script installation</strong></a></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-13"></a><a href="#step-3-result-13" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="4">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure). Click to FAQ to see Pop-Ups form.</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/14.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="m--p--k--pop-ups-or-knowledgebase"></a><a href="#m--p--k--pop-ups-or-knowledgebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>(M + P + K) + Pop-Ups (or Knowledgebase)</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-12"></a><a href="#step-1-copy-messenger-code-12" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>In this combination, first you need to follow the Erxes script instruction of (M+P+K). Click to the link and check reference.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups--knowledgebase-mpk-2"><strong>Erxes Script (M + P + K)</strong></a></p>
+<ol start="2">
+<li>Go to Settings menu =&gt; Script manager (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/16.png" /></p>
+<ol start="3">
+<li>Create new script to click NEW SCRIPT (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/17.png" /></p>
+<p><strong>Messenger+ Pop-Ups</strong></p>
+<ol start="4">
+<li>Insert name and select the messenger that you created, then select your created Pop-Ups (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/m2.png" /></p>
+<p><strong>Messenger+ Knowledgebase</strong></p>
+<ol start="4">
+<li>Insert name and select the messenger that you created, then select your created Knowledgebase (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/m4.png" /></p>
+<ol start="5">
+<li>Click on the install code button from the list (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/19.png" /></p>
+<ol start="6">
+<li>Copy the code that you created the messenger by clicking COPY TO CLIPBOARD (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/20.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-your-web-source-6"></a><a href="#step-2--paste-the-code-in-your-web-source-6" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in your web source</h4>
+<ol start="7">
+<li>Paste the code in the bottom of the body tag (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/8.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-14"></a><a href="#step-3-result-14" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="8">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><strong>Messenger+Pop-Ups</strong>
+<img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/9.png" /></p>
+<p><strong>Messenger+Knowledgebase</strong></p>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/14.png" /></p>
+<h3><a class="anchor" aria-hidden="true" id="m--p--k--pop-ups--knowledgebase-2"></a><a href="#m--p--k--pop-ups--knowledgebase-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>(M + P + K) + Pop-Ups + Knowledgebase</h3>
+<h4><a class="anchor" aria-hidden="true" id="step-1-copy-messenger-code-13"></a><a href="#step-1-copy-messenger-code-13" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Copy messenger code</h4>
+<ol>
+<li>In this combination, first you need to follow the Erxes script instruction of (M+P+K). Click to the link and check reference.</li>
+</ol>
+<p><a href="https://docs.erxes.io/docs/user/script-install#web-messenger--pop-ups--knowledgebase-mpk-2"><strong>Erxes Script (M + P + K)</strong></a></p>
+<ol start="2">
+<li>Go to Settings menu =&gt; Script manager (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/16.png" /></p>
+<ol start="3">
+<li>Create new script to click NEW SCRIPT (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/17.png" /></p>
+<ol start="4">
+<li>Insert name and select the Messenger, Pop-Ups and Knowledgebase that you created (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/m5.png" /></p>
+<ol start="5">
+<li>Click on the install code button from the list (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/19.png" /></p>
+<ol start="6">
+<li>Copy the code that you created the messenger by clicking COPY TO CLIPBOARD (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/script-manager/20.png" /></p>
+<aside class="notice">
+<p>When you want to set an optional width and height of Popup scaling, it allows 2 flow types namely embedded and pop-ups. Insert code section A and B onto the top of body tag in page of your website.</p>
+<ul>
+<li>If your pop-up flow type is &quot;Embedded&quot;, then you can choose the code included in section “A” (see the above figure).</li>
+<li>If your pop-up flow type is &quot;Popup&quot; then you can choose the code section “B” (see the above figure).</li>
+<li>ShoutBox, Dropdown, Slide-in Left, Slide-in Right types are, do not necessary to copy install code.</li>
+</ul>
+</aside>
+<ol start="7">
+<li>Go to Pop-Ups menu from left sidebar (see the below figure).</li>
+<li>Click on the install code button from the right side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/15.png" /></p>
+<ol start="9">
+<li>Copy the code of Section A or B depend on Pop-Up type (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/16.png" /></p>
+<aside class="notice">
+<p>Do not miss to copy the additional source of section “B” of Knowledgebase and copy it into top of body tag of the source code.</p>
+</aside>
+<ol start="10">
+<li>Go to Knowledge Base menu from left sidebar (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/19.png" /></p>
+<ol start="11">
+<li>Then choose the option that named &quot;Manage Knowledgebase&quot; from the dropdown menu (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/20.png" /></p>
+<ol start="12">
+<li>Copy the code of Section B (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/21.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2--paste-the-code-in-your-web-source-7"></a><a href="#step-2--paste-the-code-in-your-web-source-7" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2:  Paste the code in your web source</h4>
+<ol start="13">
+<li>Paste the code in the bottom of the body tag (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/m6.png" /></p>
+<h4><a class="anchor" aria-hidden="true" id="step-3-result-15"></a><a href="#step-3-result-15" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Result</h4>
+<ol start="14">
+<li>Once you have pasted the code, it will look like this in your web right bottom side (see the below figure).</li>
+</ol>
+<p><img src="https://erxes-docs.s3-us-west-2.amazonaws.com/script-installation/advancedsetup/25.png" /></p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 12/20/2019 by MujiGMJ</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/user/popups"><span class="arrow-prev">← </span><span>Popups</span></a><a class="docs-next button" href="/docs/user/contacts"><span>Contacts</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#quick-installation">Quick installation</a><ul class="toc-headings"><li><a href="#web-messenger">Web messenger</a></li><li><a href="#pop-ups">Pop-Ups</a></li><li><a href="#knowledgebase">Knowledgebase</a></li></ul></li><li><a href="#google-tag-manager">Google tag manager</a><ul class="toc-headings"><li><a href="#install-google-tag-manager">Install google tag manager</a></li><li><a href="#web-messenger-1">Web messenger</a></li><li><a href="#pop-ups-1">Pop-Ups</a></li><li><a href="#knowledgebase-1">Knowledgebase</a></li></ul></li><li><a href="#erxes-script-manager">Erxes script manager</a><ul class="toc-headings"><li><a href="#web-messenger-2">Web messenger</a></li><li><a href="#pop-ups-2">Pop-Ups</a></li><li><a href="#knowledgebase-2">Knowledgebase</a></li></ul></li><li><a href="#advanced-setup">Advanced setup</a><ul class="toc-headings"><li><a href="#get-data-from-your-web-app-for-logged-in-users">Get data from your web app (for logged-in users)</a></li></ul></li><li><a href="#advanced-combination-installation">Advanced combination installation</a><ul class="toc-headings"><li><a href="#web-messenger--pop-ups-or-knowledgebase">Web messenger + Pop-Ups (or Knowledgebase)</a></li><li><a href="#web-messenger--pop-ups--knowledgebase-mpk">Web messenger + Pop-Ups + Knowledgebase (M+P+K)</a></li><li><a href="#m--p--k--pop-ups">(M + P + K) + Pop-Ups</a></li><li><a href="#m--p--k--knowledgebase">(M + P + K) + Knowledgebase</a></li><li><a href="#m--p--k--pop-ups--knowledgebase">(M + P + K) + Pop-Ups + Knowledgebase</a></li></ul></li><li><a href="#advanced-google-tag-manager">Advanced Google tag manager</a><ul class="toc-headings"><li><a href="#install-google-tag-manager-1">Install google tag manager</a></li><li><a href="#web-messenger--pop-ups-or-knowledgebase-1">Web messenger + Pop-Ups (or Knowledgebase)</a></li><li><a href="#web-messenger--pop-ups--knowledgebase-mpk-1">Web messenger + Pop-Ups + Knowledgebase (M+P+K)</a></li><li><a href="#m--p--k--pop-ups-1">(M + P + K) + Pop-Ups</a></li><li><a href="#m--p--k--knowledgebase-1">(M + P + K) + Knowledgebase</a></li><li><a href="#m--p--k--pop-ups--knowledgebase-1">(M + P + K) + Pop-Ups + Knowledgebase</a></li></ul></li><li><a href="#advanced-erxes-script-manager">Advanced Erxes script manager</a><ul class="toc-headings"><li><a href="#web-messenger--pop-ups-or-knowledgebase-2">Web messenger + Pop-Ups (or Knowledgebase)</a></li><li><a href="#web-messenger--pop-ups--knowledgebase-mpk-2">Web messenger + Pop-Ups + Knowledgebase (M+P+K)</a></li><li><a href="#m--p--k--pop-ups-or-knowledgebase">(M + P + K) + Pop-Ups (or Knowledgebase)</a></li><li><a href="#m--p--k--pop-ups--knowledgebase-2">(M + P + K) + Pop-Ups + Knowledgebase</a></li></ul></li></ul></nav></div><footer class="footer"><hr/><p> © Copyright 2020 <a class="footerLink" href="https://erxes.io" target="_blank">erxes Inc</a> </p></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '807b5401b0a7d39f4b0596cd989bba35',
+                indexName: 'erxes',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

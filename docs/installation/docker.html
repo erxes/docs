@@ -1,0 +1,512 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Docker · erxes</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="[erxes on docker hub](https://hub.docker.com/u/erxes/)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Docker · erxes"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.erxes.io/"/><meta property="og:description" content="[erxes on docker hub](https://hub.docker.com/u/erxes/)"/><meta property="og:image" content="https://docs.erxes.io/img/erxes.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.erxes.io/img/erxes.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-87254317-8"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-87254317-8');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/erxes.png" alt="erxes"/><h2 class="headerTitleWithLogo">erxes</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/overview/getting-started" target="_self">Docs</a></li><li class=""><a href="https://erxes.io/pricing" target="_blank">Pricing &amp; Trial</a></li><li class=""><a href="https://erxes.io/blog/" target="_blank">Blog</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Installation Guide</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Overview<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/overview/getting-started">Getting  Started</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/architecture-overview">Architecture Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/deployment-overview">Deployment Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/integrations-overview">Integrations Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Installation Guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/installation/ubuntu">Ubuntu 16.04/18.04 LTS</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/installation/docker">Docker</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/heroku">Heroku</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/kubernetes">Kubernetes</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/upgrade">Upgrade</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">User&#x27;s Guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/user/initial-setup">Initial Setup</a></li><li class="navListItem"><a class="navItem" href="/docs/user/general-settings">General Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/team-inbox">Team inbox</a></li><li class="navListItem"><a class="navItem" href="/docs/user/knowledge-base">Knowledge Base</a></li><li class="navListItem"><a class="navItem" href="/docs/user/popups">Popups</a></li><li class="navListItem"><a class="navItem" href="/docs/user/script-install">Script installation</a></li><li class="navListItem"><a class="navItem" href="/docs/user/contacts">Contacts</a></li><li class="navListItem"><a class="navItem" href="/docs/user/sales-pipeline">Sales pipeline</a></li><li class="navListItem"><a class="navItem" href="/docs/user/sales-pipeline-settings">Sales Team Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/engage">Engage</a></li><li class="navListItem"><a class="navItem" href="/docs/user/insights">Insights</a></li><li class="navListItem"><a class="navItem" href="/docs/user/email-templates">Email templates</a></li><li class="navListItem"><a class="navItem" href="/docs/user/third-party-integrations">Third party integrations</a></li><li class="navListItem"><a class="navItem" href="/docs/user/signing-in">Signing in</a></li><li class="navListItem"><a class="navItem" href="/docs/user/profile-settings">Profile settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/notification">Notifications</a></li><li class="navListItem"><a class="navItem" href="/docs/user/mobile-apps">Mobile Apps</a></li><li class="navListItem"><a class="navItem" href="/docs/user/subscription-getting-started">Subscription getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Administrator&#x27;s guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/administrator/creating-first-user">Creating first user</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/environment-variables">Environment Variables</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/file-upload">File Upload</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/integrations">Integrations</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/migration">Migration</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Developer&#x27;s guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/developer/developer">Developer</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/contributing">Contributing</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/graphql-api">GraphQL API</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/push-notifications">Push notifications</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/android-sdk">Android SDK</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/ios-sdk">iOS SDK</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/amazon-ses">AWS SES engage</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/erxes/docs/edit/master/docs/installation/docker.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Docker</h1></header><article><div><span><p><a href="https://hub.docker.com/u/erxes/">erxes on docker hub</a></p>
+<h2><a class="anchor" aria-hidden="true" id="prerequisites"></a><a href="#prerequisites" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prerequisites</h2>
+<h3><a class="anchor" aria-hidden="true" id="install-docker"></a><a href="#install-docker" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install docker</h3>
+<p>(Ubuntu variant)</p>
+<h4><a class="anchor" aria-hidden="true" id="uninstall-old-versions"></a><a href="#uninstall-old-versions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Uninstall old versions</h4>
+<p><code>sudo apt-get remove docker docker-engine docker.io containerd runc</code></p>
+<h4><a class="anchor" aria-hidden="true" id="set-up-the-repository"></a><a href="#set-up-the-repository" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SET UP THE REPOSITORY</h4>
+<ol>
+<li>Update the apt package index:</li>
+</ol>
+<pre><code class="hljs css language-sh">sudo apt-get update
+</code></pre>
+<ol start="2">
+<li>Install packages to allow apt to use a repository over HTTPS:</li>
+</ol>
+<pre><code class="hljs css language-sh">sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+</code></pre>
+<ol start="3">
+<li>Add Docker’s official GPG key:</li>
+</ol>
+<pre><code class="hljs css language-sh">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+</code></pre>
+<ol start="4">
+<li>Use the following command to set up the stable repository.</li>
+</ol>
+<pre><code class="hljs css language-sh">sudo add-apt-repository \
+   <span class="hljs-string">"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   <span class="hljs-variable">$(lsb_release -cs)</span> \
+   stable"</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="install-docker-ce"></a><a href="#install-docker-ce" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>INSTALL DOCKER CE</h4>
+<ol>
+<li>Update the <code>apt</code> package index.</li>
+</ol>
+<pre><code class="hljs css language-sh">sudo apt-get update
+</code></pre>
+<ol start="2">
+<li>Install the <em>latest version</em> of Docker CE and containerd.</li>
+</ol>
+<pre><code class="hljs css language-sh">sudo apt-get install docker-ce docker-ce-cli containerd.io
+</code></pre>
+<ol start="3">
+<li>Verify that Docker CE is installed correctly by running the <code>hello-world</code> image.</li>
+</ol>
+<pre><code class="hljs css language-sh">sudo docker run hello-world
+</code></pre>
+<ol start="4">
+<li>Optional: If you would like to use Docker as a non-root user, you should now consider adding your user to the “docker” group with something like:</li>
+</ol>
+<pre><code class="hljs css language-sh">sudo usermod -aG docker your-user
+</code></pre>
+<p><em>Don't forget to restart shell to take effect.</em></p>
+<p>Official Docker documentation: <a href="https://docs.docker.com/install/">https://docs.docker.com/install/</a></p>
+<h3><a class="anchor" aria-hidden="true" id="install-docker-compose"></a><a href="#install-docker-compose" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install docker compose</h3>
+<p>(Linux variant)</p>
+<ol>
+<li>Run this command to download the current stable release of Docker Compose:</li>
+</ol>
+<pre><code class="hljs css language-sh">sudo curl -L <span class="hljs-string">"https://github.com/docker/compose/releases/download/1.24.1/docker-compose-<span class="hljs-variable">$(uname -s)</span>-<span class="hljs-variable">$(uname -m)</span>"</span> -o /usr/<span class="hljs-built_in">local</span>/bin/docker-compose
+</code></pre>
+<ol start="2">
+<li>Apply executable permissions to the binary:</li>
+</ol>
+<pre><code class="hljs css language-sh">sudo chmod +x /usr/<span class="hljs-built_in">local</span>/bin/docker-compose
+</code></pre>
+<p><strong>Note</strong>: If the command <code>docker-compose</code> fails after installation, check your path. You can also create a symbolic link to <code>/usr/bin</code> or any other directory in your path.</p>
+<ol start="3">
+<li>Test the installation.</li>
+</ol>
+<pre><code class="hljs css language-sh">$ docker-compose --version
+docker-compose version 1.24.1, build 01110ad01
+</code></pre>
+<p>Official Docker compose documentation: <a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></p>
+<h2><a class="anchor" aria-hidden="true" id="install-erxes"></a><a href="#install-erxes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install erxes</h2>
+<ol>
+<li>Create a new directory somewhere on your machine</li>
+<li>Save the following code as <code>docker-compose.yml</code> file.</li>
+<li>Run <code>docker-compose up -d</code> (To stop: <code>docker-compose down</code>)</li>
+<li>Run <code>docker exec -it erxes-api yarn initProject</code> command to create default admin account for you.</li>
+<li>Go to <code>localhost:3000</code> on your browser, and you're ready to login.</li>
+</ol>
+<pre><code class="hljs">(<span class="hljs-string">username:</span> admin<span class="hljs-meta">@erxes</span>.io , <span class="hljs-string">password:</span> erxes)
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="default-ports"></a><a href="#default-ports" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Default ports</h3>
+<p><em>Must be published to host machine network</em></p>
+<ul>
+<li>erxes main frontend app will run on port 3000</li>
+<li>erxes-widgets-api will run on port 3100</li>
+<li>erxes-widgets will run on port 3200</li>
+<li>erxes-api will run on port 3300</li>
+<li>erxes-integrations will run on port 3400</li>
+</ul>
+<p><em>Should not published to host machine network, only used internally</em></p>
+<ul>
+<li>erxes-api (cron) will run on port 3600</li>
+<li>erxes-api (worker) will run on port 3700</li>
+<li>erxes-logger will run on port 3800</li>
+<li>redis server will run on port 6379</li>
+<li>mongodb server will run on port 27017</li>
+<li>rabbitmq server will run on port 5672</li>
+</ul>
+<p><em>If these ports aren't available for you, you can always change it. But don't forget to change related ENV settings.</em></p>
+<h3><a class="anchor" aria-hidden="true" id="docker-composeyml-file"></a><a href="#docker-composeyml-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>docker-compose.yml file</h3>
+<aside class="notice">
+<p><strong>Note:</strong> Following ENVs are configured for localhost only.
+All erxes version have to changed the latest version.
+The latest version <a href="https://github.com/erxes/erxes/releases"><strong>release</strong></a> source code.</p>
+</aside>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">version:</span> <span class="hljs-string">"2.1"</span>
+<span class="hljs-attr">services:</span>
+  <span class="hljs-attr">erxes:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">erxes/erxes:0.10.1</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">erxes</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-comment"># erxes</span>
+      <span class="hljs-attr">REACT_APP_CDN_HOST:</span> <span class="hljs-string">http://localhost:3200</span>
+      <span class="hljs-attr">REACT_APP_CDN_HOST_API:</span> <span class="hljs-string">http://localhost:3100</span>
+      <span class="hljs-attr">REACT_APP_API_URL:</span> <span class="hljs-string">http://localhost:3300</span>
+      <span class="hljs-attr">REACT_APP_API_SUBSCRIPTION_URL:</span> <span class="hljs-string">ws://localhost:3300/subscriptions</span>
+      <span class="hljs-attr">NGINX_HOST:</span> <span class="hljs-string">localhost</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">"3000:80"</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+
+  <span class="hljs-attr">erxes-api:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">erxes/erxes-api:0.10.1</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">erxes-api</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-comment"># erxes-api</span>
+      <span class="hljs-attr">PORT:</span> <span class="hljs-string">"3300"</span>
+      <span class="hljs-attr">NODE_ENV:</span> <span class="hljs-string">production</span>
+      <span class="hljs-attr">HTTPS:</span> <span class="hljs-string">"false"</span>
+      <span class="hljs-attr">DEBUG:</span> <span class="hljs-string">"erxes-api:*"</span>
+      <span class="hljs-attr">PUBSUB_TYPE:</span> <span class="hljs-string">REDIS</span>
+      <span class="hljs-attr">UPLOAD_SERVICE_TYPE:</span> <span class="hljs-string">"AWS"</span>
+      <span class="hljs-attr">FILE_SYSTEM_PUBLIC:</span> <span class="hljs-string">"false"</span>
+      <span class="hljs-comment"># public urls</span>
+      <span class="hljs-attr">DOMAIN:</span> <span class="hljs-string">http://localhost:3300</span>
+      <span class="hljs-attr">MAIN_APP_DOMAIN:</span> <span class="hljs-string">http://localhost:3000</span>
+      <span class="hljs-attr">WIDGETS_DOMAIN:</span> <span class="hljs-string">http://localhost:3200</span>
+      <span class="hljs-attr">INTEGRATIONS_API_DOMAIN:</span> <span class="hljs-string">http://localhost:3400</span>
+      <span class="hljs-comment"># non public urls</span>
+      <span class="hljs-attr">WIDGETS_API_DOMAIN:</span> <span class="hljs-string">http://erxes-widgets-api:3100</span>
+      <span class="hljs-attr">CRONS_API_DOMAIN:</span> <span class="hljs-string">http://erxes-crons:3600</span>
+      <span class="hljs-attr">WORKERS_API_DOMAIN:</span> <span class="hljs-string">http://erxes-workers:3700</span>
+      <span class="hljs-attr">LOGS_API_DOMAIN:</span> <span class="hljs-string">http://erxes-logger:3800</span>
+      <span class="hljs-attr">ENGAGES_API_DOMAIN:</span> <span class="hljs-string">http://erxes-engages:3900</span>
+      <span class="hljs-comment"># MongoDB</span>
+      <span class="hljs-attr">MONGO_URL:</span> <span class="hljs-string">mongodb://mongo/erxes</span>
+      <span class="hljs-comment"># Redis</span>
+      <span class="hljs-attr">REDIS_HOST:</span> <span class="hljs-string">redis</span>
+      <span class="hljs-attr">REDIS_PORT:</span> <span class="hljs-string">"6379"</span>
+      <span class="hljs-attr">REDIS_PASSWORD:</span> <span class="hljs-string">""</span>
+      <span class="hljs-comment"># RabbitMQ</span>
+      <span class="hljs-attr">RABBITMQ_HOST:</span> <span class="hljs-string">"amqp://guest:guest@rabbitmq:5672/erxes"</span>
+      <span class="hljs-comment"># Email</span>
+      <span class="hljs-attr">COMPANY_EMAIL_FROM:</span> <span class="hljs-string">""</span>
+      <span class="hljs-comment"># Aws S3</span>
+      <span class="hljs-attr">AWS_ACCESS_KEY_ID:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">AWS_SECRET_ACCESS_KEY:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">AWS_BUCKET:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">AWS_PREFIX:</span> <span class="hljs-string">""</span>
+      <span class="hljs-comment"># Used when using s3 compatible service</span>
+      <span class="hljs-attr">AWS_COMPATIBLE_SERVICE_ENDPOINT:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">AWS_FORCE_PATH_STYLE:</span> <span class="hljs-string">"false"</span>
+      <span class="hljs-comment"># Used when using SES for transaction emails</span>
+      <span class="hljs-attr">AWS_SES_ACCESS_KEY_ID:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">AWS_SES_SECRET_ACCESS_KEY:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">AWS_REGION:</span> <span class="hljs-string">""</span>
+      <span class="hljs-comment"># Google Cloud Storage</span>
+      <span class="hljs-attr">GOOGLE_CLIENT_ID:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_CLIENT_SECRET:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_APPLICATION_CREDENTIALS:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_TOPIC:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_SUBSCRIPTION_NAME:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_PROJECT_ID:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_CLOUD_STORAGE_BUCKET:</span> <span class="hljs-string">""</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">"3300:3300"</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">mongo:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">rabbitmq:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">redis:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+
+  <span class="hljs-attr">erxes-crons:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">erxes/erxes-api:0.10.1</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">erxes-crons</span>
+    <span class="hljs-attr">entrypoint:</span> <span class="hljs-string">["node",</span> <span class="hljs-string">"--max_old_space_size=8192"</span><span class="hljs-string">,</span> <span class="hljs-string">"dist/cronJobs"</span><span class="hljs-string">]</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-comment"># erxes-crons</span>
+      <span class="hljs-attr">PORT_CRONS:</span> <span class="hljs-string">"3600"</span>
+      <span class="hljs-attr">NODE_ENV:</span> <span class="hljs-string">production</span>
+      <span class="hljs-attr">PROCESS_NAME:</span> <span class="hljs-string">crons</span>
+      <span class="hljs-attr">DEBUG:</span> <span class="hljs-string">"erxes-crons:*"</span>
+      <span class="hljs-comment"># MongoDB</span>
+      <span class="hljs-attr">MONGO_URL:</span> <span class="hljs-string">mongodb://mongo/erxes</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">mongo:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">rabbitmq:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+
+  <span class="hljs-attr">erxes-workers:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">erxes/erxes-api:0.10.1</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">erxes-workers</span>
+    <span class="hljs-attr">entrypoint:</span> <span class="hljs-string">["node",</span> <span class="hljs-string">"--max_old_space_size=8192"</span><span class="hljs-string">,</span> <span class="hljs-string">"--experimental-worker"</span><span class="hljs-string">,</span> <span class="hljs-string">"dist/workers"</span><span class="hljs-string">]</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-comment"># erxes-workers</span>
+      <span class="hljs-attr">PORT_WORKERS:</span> <span class="hljs-string">"3700"</span>
+      <span class="hljs-attr">NODE_ENV:</span> <span class="hljs-string">production</span>
+      <span class="hljs-attr">DEBUG:</span> <span class="hljs-string">"erxes-workers:*"</span>
+      <span class="hljs-comment"># MongoDB</span>
+      <span class="hljs-attr">MONGO_URL:</span> <span class="hljs-string">mongodb://mongo/erxes</span>
+      <span class="hljs-comment"># Redis</span>
+      <span class="hljs-attr">REDIS_HOST:</span> <span class="hljs-string">redis</span>
+      <span class="hljs-attr">REDIS_PORT:</span> <span class="hljs-string">"6379"</span>
+      <span class="hljs-attr">REDIS_PASSWORD:</span> <span class="hljs-string">""</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">mongo:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">rabbitmq:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">redis:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+
+  <span class="hljs-attr">erxes-widgets:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">erxes/erxes-widgets:0.10.1</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">erxes-widgets</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-comment"># erxes-widgets</span>
+      <span class="hljs-attr">PORT:</span> <span class="hljs-string">"3200"</span>
+      <span class="hljs-attr">ROOT_URL:</span> <span class="hljs-string">http://localhost:3200</span>
+      <span class="hljs-attr">MAIN_API_URL:</span> <span class="hljs-string">http://localhost:3300</span>
+      <span class="hljs-attr">API_GRAPHQL_URL:</span> <span class="hljs-string">http://localhost:3100/graphql</span>
+      <span class="hljs-attr">API_SUBSCRIPTIONS_URL:</span> <span class="hljs-string">ws://localhost:3300/subscriptions</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">"3200:3200"</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+
+  <span class="hljs-attr">erxes-widgets-api:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">erxes/erxes-widgets-api:0.10.1</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">erxes-widgets-api</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-comment"># erxes-widgets-api</span>
+      <span class="hljs-attr">PORT:</span> <span class="hljs-string">"3100"</span>
+      <span class="hljs-attr">NODE_ENV:</span> <span class="hljs-string">production</span>
+      <span class="hljs-attr">PUBSUB_TYPE:</span> <span class="hljs-string">REDIS</span>
+      <span class="hljs-attr">WIDGET_URL:</span> <span class="hljs-string">http://localhost:3200</span>
+      <span class="hljs-comment"># MongoDB</span>
+      <span class="hljs-attr">MONGO_URL:</span> <span class="hljs-string">mongodb://mongo/erxes</span>
+      <span class="hljs-comment"># Redis</span>
+      <span class="hljs-attr">REDIS_HOST:</span> <span class="hljs-string">redis</span>
+      <span class="hljs-attr">REDIS_PORT:</span> <span class="hljs-string">"6379"</span>
+      <span class="hljs-attr">REDIS_PASSWORD:</span> <span class="hljs-string">""</span>
+      <span class="hljs-comment"># RabbitMQ</span>
+      <span class="hljs-attr">RABBITMQ_HOST:</span> <span class="hljs-string">"amqp://guest:guest@rabbitmq:5672/erxes"</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">"3100:3100"</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">mongo:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">rabbitmq:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">redis:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+
+  <span class="hljs-attr">erxes-integrations:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">erxes/erxes-integrations:0.10.3</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">erxes-integrations</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">PORT:</span> <span class="hljs-string">"3400"</span>
+      <span class="hljs-attr">NODE_ENV:</span> <span class="hljs-string">production</span>
+      <span class="hljs-attr">DEBUG:</span> <span class="hljs-string">"erxes-integrations:*"</span>
+      <span class="hljs-comment"># public urls</span>
+      <span class="hljs-attr">DOMAIN:</span> <span class="hljs-string">http://localhost:3400</span>
+      <span class="hljs-attr">MAIN_APP_DOMAIN:</span> <span class="hljs-string">http://localhost:3000</span>
+      <span class="hljs-attr">MAIN_API_DOMAIN:</span> <span class="hljs-string">http://localhost:3300</span>
+      <span class="hljs-comment"># non public urls</span>
+      <span class="hljs-comment"># MongoDB</span>
+      <span class="hljs-attr">MONGO_URL:</span> <span class="hljs-string">mongodb://mongo/erxes_integrations</span>
+      <span class="hljs-comment"># RabbitMQ</span>
+      <span class="hljs-attr">RABBITMQ_HOST:</span> <span class="hljs-string">"amqp://guest:guest@rabbitmq:5672/erxes"</span>
+      <span class="hljs-comment"># Facebook</span>
+      <span class="hljs-attr">FACEBOOK_APP_ID:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">FACEBOOK_APP_SECRET:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">FACEBOOK_VERIFY_TOKEN:</span> <span class="hljs-string">""</span>
+      <span class="hljs-comment"># Gmail</span>
+      <span class="hljs-attr">GOOGLE_PROJECT_ID:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_GMAIL_TOPIC:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_APPLICATION_CREDENTIALS:</span> <span class="hljs-string">""</span>  <span class="hljs-comment"># path to .json file</span>
+      <span class="hljs-attr">GOOGLE_GMAIL_SUBSCRIPTION_NAME:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_CLIENT_ID:</span> <span class="hljs-string">""</span>
+      <span class="hljs-attr">GOOGLE_CLIENT_SECRET:</span> <span class="hljs-string">""</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">"3400:3400"</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">mongo:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">rabbitmq:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+
+  <span class="hljs-attr">erxes-logger:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">erxes/erxes-logger:0.10.0</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">erxes-logger</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">PORT:</span> <span class="hljs-string">"3800"</span>
+      <span class="hljs-attr">DEBUG:</span> <span class="hljs-string">"erxes-logs:*"</span>
+      <span class="hljs-comment"># MongoDB</span>
+      <span class="hljs-attr">MONGO_URL:</span> <span class="hljs-string">mongodb://mongo/erxes_logs</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">mongo:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+
+  <span class="hljs-attr">erxes-engages:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">erxes/erxes-engages-email-sender:0.10.0</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">erxes-engages</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">PORT:</span> <span class="hljs-string">"3900"</span>
+      <span class="hljs-attr">NODE_ENV:</span> <span class="hljs-string">production</span>
+      <span class="hljs-attr">DEBUG:</span> <span class="hljs-string">"erxes-engages:*"</span>
+      <span class="hljs-comment"># public urls</span>
+      <span class="hljs-attr">MAIN_API_DOMAIN:</span> <span class="hljs-string">http://localhost:3300</span>
+      <span class="hljs-comment"># MongoDB</span>
+      <span class="hljs-attr">MONGO_URL:</span> <span class="hljs-string">mongodb://mongo/erxes_engages</span>
+      <span class="hljs-comment"># RabbitMQ</span>
+      <span class="hljs-attr">RABBITMQ_HOST:</span> <span class="hljs-string">"amqp://guest:guest@rabbitmq:5672/erxes"</span>
+    <span class="hljs-attr">depends_on:</span>
+      <span class="hljs-attr">mongo:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+      <span class="hljs-attr">rabbitmq:</span>
+        <span class="hljs-attr">condition:</span> <span class="hljs-string">service_healthy</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+
+  <span class="hljs-attr">redis:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">redis:5.0.5</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">redis</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">healthcheck:</span>
+      <span class="hljs-attr">timeout:</span> <span class="hljs-string">2s</span>
+      <span class="hljs-attr">interval:</span> <span class="hljs-string">2s</span>
+      <span class="hljs-attr">retries:</span> <span class="hljs-number">200</span>
+      <span class="hljs-attr">test:</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">"CMD"</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">"bash"</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">"-c"</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">"exec 3&lt;&gt; /dev/tcp/127.0.0.1/6379 &amp;&amp; echo PING &gt;&amp;3 &amp;&amp; head -1 &lt;&amp;3 | grep PONG"</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+    <span class="hljs-comment"># Redis data will be saved into ./redis-data folder.</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">./redis-data:/data</span>
+
+  <span class="hljs-attr">mongo:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">mongo:3.6.13</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">mongo</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">healthcheck:</span>
+      <span class="hljs-attr">test:</span> <span class="hljs-string">echo</span> <span class="hljs-string">'db.stats().ok'</span> <span class="hljs-string">|</span> <span class="hljs-string">mongo</span> <span class="hljs-string">localhost:27017/test</span> <span class="hljs-string">--quiet</span>
+      <span class="hljs-attr">interval:</span> <span class="hljs-string">2s</span>
+      <span class="hljs-attr">timeout:</span> <span class="hljs-string">2s</span>
+      <span class="hljs-attr">retries:</span> <span class="hljs-number">200</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+    <span class="hljs-comment"># MongoDB data will be saved into ./mongo-data folder.</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">./mongo-data:/data/db</span>
+
+  <span class="hljs-attr">rabbitmq:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">rabbitmq:3.7.17-management</span>
+    <span class="hljs-attr">container_name:</span> <span class="hljs-string">rabbitmq</span>
+    <span class="hljs-attr">restart:</span> <span class="hljs-string">unless-stopped</span>
+    <span class="hljs-attr">hostname:</span> <span class="hljs-string">rabbitmq</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">RABBITMQ_DEFAULT_VHOST:</span> <span class="hljs-string">erxes</span>
+    <span class="hljs-attr">healthcheck:</span>
+      <span class="hljs-attr">timeout:</span> <span class="hljs-string">2s</span>
+      <span class="hljs-attr">interval:</span> <span class="hljs-string">2s</span>
+      <span class="hljs-attr">retries:</span> <span class="hljs-number">200</span>
+      <span class="hljs-attr">test:</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">"CMD"</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">"rabbitmqctl"</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-string">"status"</span>
+    <span class="hljs-attr">networks:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">erxes-net</span>
+    <span class="hljs-comment"># RabbitMQ data will be saved into ./rabbitmq-data folder.</span>
+    <span class="hljs-attr">volumes:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">./rabbitmq-data:/var/lib/rabbitmq</span>
+
+<span class="hljs-attr">networks:</span>
+  <span class="hljs-attr">erxes-net:</span>
+    <span class="hljs-attr">driver:</span> <span class="hljs-string">bridge</span>
+</code></pre>
+<p>If you have trouble running erxes docker images, feel free to open <a href="https://github.com/erxes/erxes/issues">issue</a>.</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 12/19/2019 by MujiGMJ</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/installation/ubuntu"><span class="arrow-prev">← </span><span>Ubuntu 16.04/18.04 LTS</span></a><a class="docs-next button" href="/docs/installation/heroku"><span>Heroku</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#prerequisites">Prerequisites</a><ul class="toc-headings"><li><a href="#install-docker">Install docker</a></li><li><a href="#install-docker-compose">Install docker compose</a></li></ul></li><li><a href="#install-erxes">Install erxes</a><ul class="toc-headings"><li><a href="#default-ports">Default ports</a></li><li><a href="#docker-composeyml-file">docker-compose.yml file</a></li></ul></li></ul></nav></div><footer class="footer"><hr/><p> © Copyright 2020 <a class="footerLink" href="https://erxes.io" target="_blank">erxes Inc</a> </p></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '807b5401b0a7d39f4b0596cd989bba35',
+                indexName: 'erxes',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

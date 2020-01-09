@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Heroku · erxes</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Deploying erxes on Heroku"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Heroku · erxes"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.erxes.io/"/><meta property="og:description" content="## Deploying erxes on Heroku"/><meta property="og:image" content="https://docs.erxes.io/img/erxes.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.erxes.io/img/erxes.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-87254317-8"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-87254317-8');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/erxes.png" alt="erxes"/><h2 class="headerTitleWithLogo">erxes</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/overview/getting-started" target="_self">Docs</a></li><li class=""><a href="https://erxes.io/pricing" target="_blank">Pricing &amp; Trial</a></li><li class=""><a href="https://erxes.io/blog/" target="_blank">Blog</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Installation Guide</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Overview<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/overview/getting-started">Getting  Started</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/architecture-overview">Architecture Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/deployment-overview">Deployment Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/integrations-overview">Integrations Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Installation Guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/installation/ubuntu">Ubuntu 16.04/18.04 LTS</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/docker">Docker</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/installation/heroku">Heroku</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/kubernetes">Kubernetes</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/upgrade">Upgrade</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">User&#x27;s Guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/user/initial-setup">Initial Setup</a></li><li class="navListItem"><a class="navItem" href="/docs/user/general-settings">General Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/team-inbox">Team inbox</a></li><li class="navListItem"><a class="navItem" href="/docs/user/knowledge-base">Knowledge Base</a></li><li class="navListItem"><a class="navItem" href="/docs/user/popups">Popups</a></li><li class="navListItem"><a class="navItem" href="/docs/user/script-install">Script installation</a></li><li class="navListItem"><a class="navItem" href="/docs/user/contacts">Contacts</a></li><li class="navListItem"><a class="navItem" href="/docs/user/sales-pipeline">Sales pipeline</a></li><li class="navListItem"><a class="navItem" href="/docs/user/sales-pipeline-settings">Sales Team Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/engage">Engage</a></li><li class="navListItem"><a class="navItem" href="/docs/user/insights">Insights</a></li><li class="navListItem"><a class="navItem" href="/docs/user/email-templates">Email templates</a></li><li class="navListItem"><a class="navItem" href="/docs/user/third-party-integrations">Third party integrations</a></li><li class="navListItem"><a class="navItem" href="/docs/user/signing-in">Signing in</a></li><li class="navListItem"><a class="navItem" href="/docs/user/profile-settings">Profile settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/notification">Notifications</a></li><li class="navListItem"><a class="navItem" href="/docs/user/mobile-apps">Mobile Apps</a></li><li class="navListItem"><a class="navItem" href="/docs/user/subscription-getting-started">Subscription getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Administrator&#x27;s guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/administrator/creating-first-user">Creating first user</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/environment-variables">Environment Variables</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/file-upload">File Upload</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/integrations">Integrations</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/migration">Migration</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Developer&#x27;s guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/developer/developer">Developer</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/contributing">Contributing</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/graphql-api">GraphQL API</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/push-notifications">Push notifications</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/android-sdk">Android SDK</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/ios-sdk">iOS SDK</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/amazon-ses">AWS SES engage</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/erxes/docs/edit/master/docs/installation/heroku.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Heroku</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="deploying-erxes-on-heroku"></a><a href="#deploying-erxes-on-heroku" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deploying erxes on Heroku</h2>
+<p>Heroku is a container-based cloud Platform as a Service (PaaS).</p>
+<p>In order to deploy erxes and other related apps, you will need <code>mLab MongoDB</code> (MongoDB), <code>Heroku Redis</code> (Redis), and <code>CloudAMQP</code> (RabbitMQ) addons.</p>
+<p>To add any addon to an app, you will need to register your credit card. So please add your creadit card and verify your account prior to proceeding further.</p>
+<h3><a class="anchor" aria-hidden="true" id="one-click-deployment"></a><a href="#one-click-deployment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>One Click deployment</h3>
+<p>In this installation guide, we pretend the following app names will be available on Heroku and they will be used to demonstrate - we expect you to choose any available names on Heroku.</p>
+<ul>
+<li><code>erxes</code> - <strong>erxes</strong> <code>(https://erxes.herokuapp.com)</code></li>
+<li><code>erxes API</code> - <strong>erxes-api</strong> <code>(https://erxes-api.herokuapp.com)</code></li>
+<li><code>erxes Widget</code> - <strong>erxes-widget</strong> <code>(https://erxes-widget.herokuapp.com)</code></li>
+<li><code>erxes Widget API</code> - <strong>erxes-widget-api</strong> <code>(https://erxes-widget-api.herokuapp.com)</code></li>
+</ul>
+<p>Try the following 4 steps to install all required apps on Heroku.</p>
+<p><strong>Note</strong> - When setting up config vars (environment vars), do not change the PORT numbers of all apps.</p>
+<p>1.<strong>Install erxes</strong></p>
+<p>Please try clicking the deploy button below, then set all the config vars and hit the Deploy app button.</p>
+<p><strong>Config vars:</strong></p>
+<pre><code class="hljs css language-sh">REACT_APP_API_SUBSCRIPTION_URL = ws://erxes-api.herokuapp.com/subscriptions
+REACT_APP_API_URL = https://erxes-api.herokuapp.com
+REACT_APP_CDN_HOST = https://erxes-widget.herokuapp.com
+REACT_APP_CDN_HOST_API = https://erxes-widget-api.herokuapp.com
+</code></pre>
+<p><a href="https://heroku.com/deploy?template=https://github.com/erxes/erxes"><img src="https://www.herokucdn.com/deploy/button.svg#heroku" alt="Deploy erxes" title="Deploy erxes"></a></p>
+<p>2.<strong>Install erxes API</strong></p>
+<p>Now it's time to install erxes API - click the button below and set the config vars.</p>
+<p><strong>Config vars:</strong></p>
+<pre><code class="hljs css language-sh">AWS_ACCESS_KEY_ID = your_acess_key_id
+AWS_BUCKET = bucket_name
+AWS_PREFIX = prefix
+AWS_REGION = your_bucket_region
+AWS_SECRET_ACCESS_KEY = secret_key
+AWS_SES_ACCESS_KEY_ID = access_key
+AWS_SES_CONFIG_SET = config
+AWS_SES_SECRET_ACCESS_KEY = secret_key
+COMPANY_EMAIL_FROM = noreply@erxes.io
+DEFAULT_EMAIL_SERVICE = sendgrid
+DOMAIN = https://erxes-api.herokuapp.com
+FILE_SYSTEM_PUBLIC = <span class="hljs-literal">false</span>
+HTTPS = <span class="hljs-literal">true</span>
+INTEGRATIONS_API_DOMAIN = https://ERXESINTEGRATIONSAPINAME.herokuapp.com
+MAIL_HOST = your_mail_host
+MAIL_PASS = pass
+MAIL_PORT = port
+MAIL_SERVICE = sendgrid
+MAIL_USER = your_user
+MAIN_APP_DOMAIN = https://erxes.herokuapp.com
+MONGO_URL = mongodb:// <span class="hljs-comment"># leave it as is, we will update it later on</span>
+PORT = 3300
+PUBSUB_TYPE = REDIS
+REDIS_HOST = REDIS_HOST <span class="hljs-comment"># we will update it later on</span>
+REDIS_PASSWORD = REDIS_PASS <span class="hljs-comment"># we will update it later on</span>
+REDIS_PORT = 28229 <span class="hljs-comment"># update it later on</span>
+UPLOAD_FILE_TYPES = image/png,image/jpeg,image/jpg,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,
+UPLOAD_SERVICE_TYPE = AWS
+USE_BRAND_RESTRICTIONS = <span class="hljs-literal">false</span>
+WIDGETS_API_DOMAIN = https://erxes-widget-api.herokuapp.com
+WIDGETS_DOMAIN = https://erxes-widget.herokuapp.com
+</code></pre>
+<p><a href="https://heroku.com/deploy?template=https://github.com/erxes/erxes-api"><img src="https://www.herokucdn.com/deploy/button.svg#heroku" alt="Deploy erxes API" title="Deploy erxes API"></a></p>
+<p>3.<strong>Install erxes Widgets</strong></p>
+<p>Now install erxes Widget app by clicking the deploy button below and set config vars.</p>
+<p><strong>Config vars:</strong></p>
+<pre><code class="hljs css language-sh">API_GRAPHQL_URL = https://erxes-widget-api.herokuapp.com/graphql
+API_SUBSCRIPTIONS_URL = ws://erxes-api.herokuapp.com/subscriptions
+MAIN_API_URL = https://erxes.herokuapp.com
+PORT = 3200
+ROOT_URL = https://erxes-widget.herokuapp.com
+</code></pre>
+<p><a href="https://heroku.com/deploy?template=https://github.com/erxes/erxes-widgets"><img src="https://www.herokucdn.com/deploy/button.svg#heroku" alt="Deploy Widgets" title="Deploy erxes Widgets"></a></p>
+<p>4.<strong>Install erxes Widgets API</strong></p>
+<p>You are doing great! And now it's time to install last app - erxes Widgets API.</p>
+<p><strong>Config vars:</strong></p>
+<pre><code class="hljs css language-sh">MONGO_URL = mongodb://localhost/erxes
+PORT = 3100
+RABBITMQ_HOST = amqp://localhost <span class="hljs-comment"># we will update it later on</span>
+WIDGET_URL = https://erxes-widget.herokuapp.com <span class="hljs-comment"># we will update it later on</span>
+</code></pre>
+<p><a href="https://heroku.com/deploy?template=https://github.com/erxes/erxes-widgets-api"><img src="https://www.herokucdn.com/deploy/button.svg#heroku" alt="Deploy Widgets API" title="Deploy erxes Widgets API"></a></p>
+<p>Now go to Heroku dashboard and select the <strong>erxes-api app</strong> from the Apps tab.</p>
+<p>Go to Resources tab where you can manage your resources. You need to share MongoDB and RabbitMQ addons with <strong>erxes-widget-api</strong> app so that the <strong>erxes-widget-api</strong> will be able to access these two addons.</p>
+<p>To do that, click a button 'Attached as RABBITMQ' in Add-ons section and then click 'Manage Attachments'.<br>
+Now click '+ Attach to another app' button and search for 'erxes widget app' name you have chosen and select it.
+Repeat the step for MongoDB.</p>
+<p>If you find it difficult, please go to <a href="https://devcenter.heroku.com/articles/managing-add-ons#using-the-dashboard-attaching-an-add-on-to-another-app">Heroku Dev Center</a>.</p>
+<p>Finally, you need to update config vars of <strong>erxes-api</strong> and <strong>erxes-widget-api</strong> apps.</p>
+<p>Please go to <strong>erxes-api</strong> app and select Settings tab.<br>
+In the Config Vars section, click a button 'Reveal Config Vars'.<br>
+Now you will be able to see all the config vars.<br>
+Copy MONGO_URI's value and paste it into MONGO_URL.<br>
+Copy RABBITMQ_URL's value and paste into RABBITMQ_HOST.<br>
+Update REDIS_HOST, REDIS_PASSWORD, and REDIS_PORT values using REDIS_URL's value.</p>
+<p>Now please go to <strong>erxes-widget-api</strong> and update RABBITMQ_HOST and MONGO_URL config vars.<br>
+Use CLOUDAMQP_URL and MONGODB_URI config vars values'.</p>
+<p>Now go back to <strong>erxes-api</strong> and click 'More' button in the top right corner, then select 'Run console'.<br>
+Run 'yarn initProject' command which will create the following credentials for you to log into <code>https://erxes.herokuapp.com</code>.</p>
+<pre><code class="hljs css language-sh">username: admin@erxes.io
+password: erxes
+</code></pre>
+<p>Now it's time to grab yourself a cup of coffee and enjoy using <strong>Erxes</strong>.</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 1/6/2020 by Batnasan Byambasuren</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/installation/docker"><span class="arrow-prev">← </span><span>Docker</span></a><a class="docs-next button" href="/docs/installation/kubernetes"><span>Kubernetes</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#deploying-erxes-on-heroku">Deploying erxes on Heroku</a><ul class="toc-headings"><li><a href="#one-click-deployment">One Click deployment</a></li></ul></li></ul></nav></div><footer class="footer"><hr/><p> © Copyright 2020 <a class="footerLink" href="https://erxes.io" target="_blank">erxes Inc</a> </p></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '807b5401b0a7d39f4b0596cd989bba35',
+                indexName: 'erxes',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

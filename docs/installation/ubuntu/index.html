@@ -1,0 +1,346 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Ubuntu 16.04/18.04 LTS · erxes</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Manual installation on Ubuntu 16.04/18.04 LTS."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Ubuntu 16.04/18.04 LTS · erxes"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.erxes.io/"/><meta property="og:description" content="Manual installation on Ubuntu 16.04/18.04 LTS."/><meta property="og:image" content="https://docs.erxes.io/img/erxes.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.erxes.io/img/erxes.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-87254317-8"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-87254317-8');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/erxes.png" alt="erxes"/><h2 class="headerTitleWithLogo">erxes</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/overview/getting-started" target="_self">Docs</a></li><li class=""><a href="https://erxes.io/pricing" target="_blank">Pricing &amp; Trial</a></li><li class=""><a href="https://erxes.io/blog/" target="_blank">Blog</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Installation Guide</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Overview<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/overview/getting-started">Getting  Started</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/architecture-overview">Architecture Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/deployment-overview">Deployment Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/overview/integrations-overview">Integrations Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Installation Guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/docs/installation/ubuntu">Ubuntu 16.04/18.04 LTS</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/docker">Docker</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/heroku">Heroku</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/kubernetes">Kubernetes</a></li><li class="navListItem"><a class="navItem" href="/docs/installation/upgrade">Upgrade</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">User&#x27;s Guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/user/initial-setup">Initial Setup</a></li><li class="navListItem"><a class="navItem" href="/docs/user/general-settings">General Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/team-inbox">Team inbox</a></li><li class="navListItem"><a class="navItem" href="/docs/user/knowledge-base">Knowledge Base</a></li><li class="navListItem"><a class="navItem" href="/docs/user/popups">Popups</a></li><li class="navListItem"><a class="navItem" href="/docs/user/script-install">Script installation</a></li><li class="navListItem"><a class="navItem" href="/docs/user/contacts">Contacts</a></li><li class="navListItem"><a class="navItem" href="/docs/user/sales-pipeline">Sales pipeline</a></li><li class="navListItem"><a class="navItem" href="/docs/user/sales-pipeline-settings">Sales Team Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/engage">Engage</a></li><li class="navListItem"><a class="navItem" href="/docs/user/insights">Insights</a></li><li class="navListItem"><a class="navItem" href="/docs/user/email-templates">Email templates</a></li><li class="navListItem"><a class="navItem" href="/docs/user/third-party-integrations">Third party integrations</a></li><li class="navListItem"><a class="navItem" href="/docs/user/signing-in">Signing in</a></li><li class="navListItem"><a class="navItem" href="/docs/user/profile-settings">Profile settings</a></li><li class="navListItem"><a class="navItem" href="/docs/user/notification">Notifications</a></li><li class="navListItem"><a class="navItem" href="/docs/user/mobile-apps">Mobile Apps</a></li><li class="navListItem"><a class="navItem" href="/docs/user/subscription-getting-started">Subscription getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Administrator&#x27;s guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/administrator/creating-first-user">Creating first user</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/environment-variables">Environment Variables</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/file-upload">File Upload</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/integrations">Integrations</a></li><li class="navListItem"><a class="navItem" href="/docs/administrator/migration">Migration</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Developer&#x27;s guide<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/developer/developer">Developer</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/contributing">Contributing</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/graphql-api">GraphQL API</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/push-notifications">Push notifications</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/android-sdk">Android SDK</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/ios-sdk">iOS SDK</a></li><li class="navListItem"><a class="navItem" href="/docs/developer/amazon-ses">AWS SES engage</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/erxes/docs/edit/master/docs/installation/ubuntu.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Ubuntu 16.04/18.04 LTS</h1></header><article><div><span><p>Manual installation on Ubuntu 16.04/18.04 LTS.</p>
+<h2><a class="anchor" aria-hidden="true" id="prerequisites"></a><a href="#prerequisites" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prerequisites</h2>
+<p>There are a couple of pre-reqs for running erxes. This page outlines how to quickly install the things needed on an Ubuntu 16.04/18.04 server.
+This guide assumes that the server does not have any other services running on it.</p>
+<h3><a class="anchor" aria-hidden="true" id="install-mongodb-v36x"></a><a href="#install-mongodb-v36x" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install MongoDB v3.6.x</h3>
+<pre><code class="hljs css language-sh">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse"</span> | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+sudo systemctl start mongod
+sudo systemctl <span class="hljs-built_in">enable</span> mongod
+</code></pre>
+<p>Official MongoDB documentation: <a href="https://docs.mongodb.com/v3.6/tutorial/install-mongodb-on-ubuntu/">https://docs.mongodb.com/v3.6/tutorial/install-mongodb-on-ubuntu/</a></p>
+<h3><a class="anchor" aria-hidden="true" id="install-redis"></a><a href="#install-redis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Redis</h3>
+<pre><code class="hljs css language-sh">sudo apt-get update
+sudo apt-get install -y redis-server
+sudo systemctl start redis-server
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="install-rabbitmq"></a><a href="#install-rabbitmq" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install RabbitMQ</h3>
+<p>Install Erlang from an Apt Repostory on Bintray</p>
+<pre><code class="hljs css language-sh">sudo apt-key adv --keyserver <span class="hljs-string">"hkps.pool.sks-keyservers.net"</span> --recv-keys <span class="hljs-string">"0x6B73A36E6026DFCA"</span>
+sudo apt-get install apt-transport-https
+
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"deb https://dl.bintray.com/rabbitmq/debian xenial main
+deb https://dl.bintray.com/rabbitmq-erlang/debian xenial erlang"</span> | sudo tee /etc/apt/sources.list.d/bintray.erlang.list
+
+sudo apt-get update
+sudo apt-get install -y erlang-base \
+                        erlang-asn1 erlang-crypto erlang-eldap erlang-ftp erlang-inets \
+                        erlang-mnesia erlang-os-mon erlang-parsetools erlang-public-key \
+                        erlang-runtime-tools erlang-snmp erlang-ssl \
+                        erlang-syntax-tools erlang-tftp erlang-tools erlang-xmerl
+sudo apt-get install rabbitmq-server
+sudo vim /etc/apt/preferences.d/erlang
+Package: erlang*
+Pin: release o=Bintray
+Pin-Priority: 1000
+</code></pre>
+<p>Enable management plugin</p>
+<pre><code class="hljs css language-sh">sudo rabbitmq-plugins <span class="hljs-built_in">enable</span> rabbitmq_management
+sudo service rabbitmq-server restart
+</code></pre>
+<p>Official RabbitMQ documentation: <a href="https://www.rabbitmq.com/install-debian.html">https://www.rabbitmq.com/install-debian.html</a></p>
+<h3><a class="anchor" aria-hidden="true" id="install-nginx"></a><a href="#install-nginx" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Nginx</h3>
+<pre><code class="hljs css language-sh">sudo apt-get install -y nginx
+</code></pre>
+<p>Serve static content + reverse proxy</p>
+<h3><a class="anchor" aria-hidden="true" id="install-nodejs-v10x"></a><a href="#install-nodejs-v10x" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Node.js v10.x</h3>
+<pre><code class="hljs css language-sh">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+</code></pre>
+<p><strong>Optional</strong>: install build tools
+To compile and install native addons from npm you may also need to install build tools:</p>
+<pre><code class="hljs css language-sh">sudo apt-get install -y build-essential
+</code></pre>
+<p>Official Node.js documentation: <a href="https://nodejs.org/en/download/package-manager/">https://nodejs.org/en/download/package-manager/</a></p>
+<h3><a class="anchor" aria-hidden="true" id="install-yarn-package-manager"></a><a href="#install-yarn-package-manager" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Yarn package manager</h3>
+<pre><code class="hljs css language-sh">curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"deb https://dl.yarnpkg.com/debian/ stable main"</span> | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt-get update &amp;&amp; sudo apt-get install yarn
+</code></pre>
+<p>Official Yarn package manager documentation: <a href="https://yarnpkg.com/lang/en/docs/install">https://yarnpkg.com/lang/en/docs/install</a></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="installation"></a><a href="#installation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
+<h3><a class="anchor" aria-hidden="true" id="prepare-clean-directory"></a><a href="#prepare-clean-directory" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prepare clean directory</h3>
+<pre><code class="hljs css language-sh">mkdir ~/erxes.io
+
+<span class="hljs-built_in">cd</span> ~/erxes.io
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="downloading-release-assets"></a><a href="#downloading-release-assets" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Downloading release assets</h3>
+<ul>
+<li>erxes</li>
+</ul>
+<p>Download latest <a href="https://github.com/erxes/erxes/releases">release</a> source code. (zip or tar.gz)</p>
+<pre><code class="hljs css language-sh">curl -JLO https://github.com/erxes/erxes/archive/0.9.15.tar.gz
+</code></pre>
+<ul>
+<li>erxes-api</li>
+</ul>
+<p>Download latest <a href="https://github.com/erxes/erxes-api/releases">release</a> source code. (zip or tar.gz)</p>
+<pre><code class="hljs css language-sh">curl -JLO https://github.com/erxes/erxes-api/archive/0.9.15.tar.gz
+</code></pre>
+<ul>
+<li>erxes-widgets</li>
+</ul>
+<p>Download latest <a href="https://github.com/erxes/erxes-widgets/releases">release</a> source code. (zip or tar.gz)</p>
+<pre><code class="hljs css language-sh">curl -JLO https://github.com/erxes/erxes-widgets/archive/0.9.15.tar.gz
+</code></pre>
+<ul>
+<li>erxes-widgets-api</li>
+</ul>
+<p>Download latest <a href="https://github.com/erxes/erxes-widgets-api/releases">release</a> source code. (zip or tar.gz)</p>
+<pre><code class="hljs css language-sh">curl -JLO https://github.com/erxes/erxes-widgets-api/archive/0.9.15.tar.gz
+</code></pre>
+<p><em><strong>Notes:</strong> Always download same version releases from all repo.</em></p>
+<h3><a class="anchor" aria-hidden="true" id="extract-source-code"></a><a href="#extract-source-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extract source code</h3>
+<p>Extract the downloaded version. Latest <a href="https://github.com/erxes/erxes/releases">release</a> source code. (zip or tar.gz)</p>
+<pre><code class="hljs css language-sh">tar -zxvf erxes-0.9.15.tar.gz
+
+tar -zxvf erxes-api-0.9.15.tar.gz
+
+tar -zxvf erxes-widgets-0.9.15.tar.gz
+
+tar -zxvf erxes-widgets-api-0.9.15.tar.gz
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="install-dependencies"></a><a href="#install-dependencies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install dependencies</h3>
+<ul>
+<li>erxes-x.x.x   The latest version <a href="https://github.com/erxes/erxes/releases">release</a> source code.</li>
+</ul>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> ~/erxes.io/erxes-0.9.15 &amp;&amp; yarn install
+</code></pre>
+<ul>
+<li>erxes-api-x.x.x   The latest version <a href="https://github.com/erxes/erxes/releases">release</a> source code.</li>
+</ul>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> ~/erxes.io/erxes-api-0.9.15 &amp;&amp; yarn install
+</code></pre>
+<ul>
+<li>erxes-widgets-x.x.x   The latest version <a href="https://github.com/erxes/erxes/releases">release</a> source code.</li>
+</ul>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> ~/erxes.io/erxes-widgets-0.9.15 &amp;&amp; yarn install
+</code></pre>
+<ul>
+<li>erxes-widgets-api-x.x.x  The latest version <a href="https://github.com/erxes/erxes/releases">release</a> source code.</li>
+</ul>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> ~/erxes.io/erxes-widgets-api-0.9.15 &amp;&amp; yarn install
+</code></pre>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="configuration"></a><a href="#configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuration</h2>
+<p>Copy all settings from <code>.env.sample</code> file and configure it on your own. Do it on all reposotiries.</p>
+<pre><code class="hljs css language-sh">cp .env.sample .env
+</code></pre>
+<p>Following command will create default admin account.  The latest version <a href="https://github.com/erxes/erxes/releases">release</a> source code.</p>
+<pre><code class="hljs css language-sh"><span class="hljs-built_in">cd</span> ~/erxes.io/erxes-api-0.9.15 &amp;&amp; yarn initProject`
+</code></pre>
+<p>with following credentials</p>
+<pre><code class="hljs css language-sh">username: admin@erxes.io
+password: erxes
+</code></pre>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="production-server"></a><a href="#production-server" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Production server</h2>
+<h3><a class="anchor" aria-hidden="true" id="nginx-settings"></a><a href="#nginx-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>nginx settings</h3>
+<pre><code class="hljs"><span class="hljs-section">server</span> {
+        <span class="hljs-attribute">listen</span> <span class="hljs-number">80</span>;
+        <span class="hljs-attribute">server_name</span> erxes.example.com;
+        <span class="hljs-comment"># Don't forget to update below path with /path/to/erxes/build;</span>
+        <span class="hljs-attribute">root</span> /home/user/erxes.io/erxes/build;
+        <span class="hljs-attribute">index</span> index.html;
+        <span class="hljs-attribute">error_log</span> /var/log/nginx/erxes.<span class="hljs-literal">error</span>.log;
+
+        <span class="hljs-attribute">location</span> / {
+                <span class="hljs-attribute">try_files</span> <span class="hljs-variable">$uri</span> /index.html;
+        }
+
+        <span class="hljs-comment"># Assumming widgets-api project is running on 3100 port.</span>
+        <span class="hljs-attribute">location</span> /widgets-api/ {
+                <span class="hljs-attribute">proxy_pass</span> http://127.0.0.1:3100/;
+                <span class="hljs-attribute">proxy_set_header</span> Host <span class="hljs-variable">$http_host</span>;
+                <span class="hljs-attribute">proxy_set_header</span> X-Real-IP <span class="hljs-variable">$remote_addr</span>;
+                <span class="hljs-attribute">proxy_set_header</span> X-Forwarded-For <span class="hljs-variable">$proxy_add_x_forwarded_for</span>;
+        }
+
+        <span class="hljs-comment"># Assumming widgets project is running on 3200 port.</span>
+        <span class="hljs-attribute">location</span> /widgets/ {
+                <span class="hljs-attribute">proxy_pass</span> http://127.0.0.1:3200/;
+                <span class="hljs-attribute">proxy_set_header</span> Host <span class="hljs-variable">$http_host</span>;
+                <span class="hljs-attribute">proxy_set_header</span> X-Real-IP <span class="hljs-variable">$remote_addr</span>;
+                <span class="hljs-attribute">proxy_set_header</span> X-Forwarded-For <span class="hljs-variable">$proxy_add_x_forwarded_for</span>;
+        }
+
+        <span class="hljs-comment"># Assumming api project is running on 3300 port.</span>
+        <span class="hljs-attribute">location</span> /api/ {
+                <span class="hljs-attribute">proxy_pass</span> http://127.0.0.1:3300/;
+                <span class="hljs-attribute">proxy_set_header</span> Host <span class="hljs-variable">$http_host</span>;
+                <span class="hljs-attribute">proxy_set_header</span> X-Real-IP <span class="hljs-variable">$remote_addr</span>;
+                <span class="hljs-attribute">proxy_set_header</span> X-Forwarded-For <span class="hljs-variable">$proxy_add_x_forwarded_for</span>;
+                <span class="hljs-attribute">proxy_http_version</span> <span class="hljs-number">1</span>.<span class="hljs-number">1</span>;
+                <span class="hljs-attribute">proxy_set_header</span> Upgrade <span class="hljs-variable">$http_upgrade</span>;
+                <span class="hljs-attribute">proxy_set_header</span> Connection <span class="hljs-string">"Upgrade"</span>;
+        }
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="erxes"></a><a href="#erxes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes</h3>
+<p>erxes is <a href="https://github.com/facebook/create-react-app">CreateReactApp</a> frontend project.</p>
+<p><code>yarn build</code> - build production optimized files in <code>build</code> directory and nginx will serve those static files.</p>
+<h3><a class="anchor" aria-hidden="true" id="erxes-api"></a><a href="#erxes-api" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes-api</h3>
+<p><code>yarn build</code> - build production optimized files in <code>dist</code> directory.</p>
+<p><code>yarn start</code> - start NodeJS express server on 3300 port by default.</p>
+<h3><a class="anchor" aria-hidden="true" id="erxes-widgets"></a><a href="#erxes-widgets" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes-widgets</h3>
+<p><code>yarn build</code> - build production optimized files in <code>dist</code> directory.</p>
+<p><code>yarn start</code> - start NodeJS express server on 3200 port by default.</p>
+<h3><a class="anchor" aria-hidden="true" id="erxes-widgets-api"></a><a href="#erxes-widgets-api" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes-widgets-api</h3>
+<p><code>yarn build</code> - build production optimized files in <code>dist</code> directory.</p>
+<p><code>yarn start</code> - start NodeJS express server on 3100 port by default.</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="development-server"></a><a href="#development-server" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Development server</h2>
+<h3><a class="anchor" aria-hidden="true" id="erxes-1"></a><a href="#erxes-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes</h3>
+<p><code>yarn start</code> - command will run development Nodejs server for CRA on port 3000 by default.</p>
+<h3><a class="anchor" aria-hidden="true" id="erxes-api-1"></a><a href="#erxes-api-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes-api</h3>
+<p><code>yarn dev</code> - start NodeJS express development server on 3300 port by default.</p>
+<h3><a class="anchor" aria-hidden="true" id="erxes-widgets-1"></a><a href="#erxes-widgets-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes-widgets</h3>
+<p><code>yarn dev</code> - start NodeJS express development server on 3200 port by default.</p>
+<h3><a class="anchor" aria-hidden="true" id="erxes-widgets-api-1"></a><a href="#erxes-widgets-api-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes-widgets-api</h3>
+<p><code>yarn dev</code> - start NodeJS express development server on 3100 port by default.</p>
+<h2><a class="anchor" aria-hidden="true" id="starting-on-boot"></a><a href="#starting-on-boot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Starting on boot</h2>
+<h3><a class="anchor" aria-hidden="true" id="systemd"></a><a href="#systemd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Systemd</h3>
+<p>MongoDB, Nginx, Redis systemd service files will be already created by default. To make sure it's enabled on boot run following commands.</p>
+<pre><code class="hljs css language-sh">sudo systemctl <span class="hljs-built_in">enable</span> mongod
+sudo systemctl <span class="hljs-built_in">enable</span> nginx
+sudo systemctl <span class="hljs-built_in">enable</span> redis-server
+</code></pre>
+<p>Create new systemd service file</p>
+<h4><a class="anchor" aria-hidden="true" id="erxes-api-2"></a><a href="#erxes-api-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes-api</h4>
+<p><code>sudo vim /lib/systemd/system/erxes-api.service</code></p>
+<pre><code class="hljs"><span class="hljs-section">[Unit]</span>
+<span class="hljs-attr">Description</span>=erxes-api
+<span class="hljs-attr">Documentation</span>=https://docs.erxes.io
+<span class="hljs-attr">After</span>=network.target
+<span class="hljs-section">
+[Service]</span>
+<span class="hljs-attr">Type</span>=simple
+<span class="hljs-attr">ExecStart</span>=/usr/bin/node /home/user/erxes.io/erxes-api/dist/index.js
+<span class="hljs-attr">Restart</span>=<span class="hljs-literal">on</span>-failure
+<span class="hljs-section">
+[Install]</span>
+<span class="hljs-attr">WantedBy</span>=multi-user.target
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="erxes-widgets-2"></a><a href="#erxes-widgets-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes-widgets</h4>
+<p><code>sudo vim /lib/systemd/system/erxes-widgets.service</code></p>
+<pre><code class="hljs"><span class="hljs-section">[Unit]</span>
+<span class="hljs-attr">Description</span>=erxes-widgets
+<span class="hljs-attr">Documentation</span>=https://docs.erxes.io
+<span class="hljs-attr">After</span>=network.target
+<span class="hljs-section">
+[Service]</span>
+<span class="hljs-attr">Type</span>=simple
+<span class="hljs-attr">ExecStart</span>=/usr/bin/node /home/user/erxes.io/erxes-widgets/dist/index.js
+<span class="hljs-attr">Restart</span>=<span class="hljs-literal">on</span>-failure
+<span class="hljs-section">
+[Install]</span>
+<span class="hljs-attr">WantedBy</span>=multi-user.target
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="erxes-widgets-api-2"></a><a href="#erxes-widgets-api-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>erxes-widgets-api</h4>
+<p><code>sudo vim /lib/systemd/system/erxes-widgets-api.service</code></p>
+<pre><code class="hljs"><span class="hljs-section">[Unit]</span>
+<span class="hljs-attr">Description</span>=erxes-widgets-api
+<span class="hljs-attr">Documentation</span>=https://docs.erxes.io
+<span class="hljs-attr">After</span>=network.target
+<span class="hljs-section">
+[Service]</span>
+<span class="hljs-attr">Type</span>=simple
+<span class="hljs-attr">ExecStart</span>=/usr/bin/node /home/user/erxes.io/erxes-widgets-api/dist/index.js
+<span class="hljs-attr">Restart</span>=<span class="hljs-literal">on</span>-failure
+<span class="hljs-section">
+[Install]</span>
+<span class="hljs-attr">WantedBy</span>=multi-user.target
+</code></pre>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 1/2/2020 by MujiGMJ</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/overview/integrations-overview"><span class="arrow-prev">← </span><span>Integrations Overview</span></a><a class="docs-next button" href="/docs/installation/docker"><span>Docker</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#prerequisites">Prerequisites</a><ul class="toc-headings"><li><a href="#install-mongodb-v36x">Install MongoDB v3.6.x</a></li><li><a href="#install-redis">Install Redis</a></li><li><a href="#install-rabbitmq">Install RabbitMQ</a></li><li><a href="#install-nginx">Install Nginx</a></li><li><a href="#install-nodejs-v10x">Install Node.js v10.x</a></li><li><a href="#install-yarn-package-manager">Install Yarn package manager</a></li></ul></li><li><a href="#installation">Installation</a><ul class="toc-headings"><li><a href="#prepare-clean-directory">Prepare clean directory</a></li><li><a href="#downloading-release-assets">Downloading release assets</a></li><li><a href="#extract-source-code">Extract source code</a></li><li><a href="#install-dependencies">Install dependencies</a></li></ul></li><li><a href="#configuration">Configuration</a></li><li><a href="#production-server">Production server</a><ul class="toc-headings"><li><a href="#nginx-settings">nginx settings</a></li><li><a href="#erxes">erxes</a></li><li><a href="#erxes-api">erxes-api</a></li><li><a href="#erxes-widgets">erxes-widgets</a></li><li><a href="#erxes-widgets-api">erxes-widgets-api</a></li></ul></li><li><a href="#development-server">Development server</a><ul class="toc-headings"><li><a href="#erxes-1">erxes</a></li><li><a href="#erxes-api-1">erxes-api</a></li><li><a href="#erxes-widgets-1">erxes-widgets</a></li><li><a href="#erxes-widgets-api-1">erxes-widgets-api</a></li></ul></li><li><a href="#starting-on-boot">Starting on boot</a><ul class="toc-headings"><li><a href="#systemd">Systemd</a></li></ul></li></ul></nav></div><footer class="footer"><hr/><p> © Copyright 2020 <a class="footerLink" href="https://erxes.io" target="_blank">erxes Inc</a> </p></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '807b5401b0a7d39f4b0596cd989bba35',
+                indexName: 'erxes',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
