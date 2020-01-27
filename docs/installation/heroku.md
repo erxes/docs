@@ -58,6 +58,40 @@ WIDGETS_DOMAIN = https://erxes-widget.herokuapp.com
 
 [![Deploy erxes API](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes API")](https://heroku.com/deploy?template=https://github.com/batnasan/erxes-api/tree/heroku_button)
 
+Now go to Heroku dashboard and select the **erxes-api app** from the Apps tab.
+
+Go to Settings tab where you can manage your Config Vars as you need to update config vars of **erxes-api** app.
+
+In the Config Vars section, click a button 'Reveal Config Vars' so that you will be able to see all the config vars.
+
+Copy MONGO_URI's value and paste it into MONGO_URL.
+
+Copy RABBITMQ_URL's value and paste into RABBITMQ_HOST.
+
+Update REDIS_HOST, REDIS_PASSWORD, and REDIS_PORT values using REDIS_URL's value.
+
+Please now go to Resources tab as you will need to start `cronjob` and `worker` processes.
+Start `cronjob` and `worker`.
+
+The last step is to insert initial data. To do that you will need to clone `erxes-api` repo and `mongorestore` tool.
+
+Clone the `erxes-api` and run the following commands in the terminal.
+
+`cd erxes-api`
+
+`mongorestore --host=host --port=port -u user -d db initialData`
+
+`mongorestore --host=host --port=port -u user -d db permissionData`
+
+**Note**: extract `host`, `port`, `user`, `db` from the `MONGO_URI` config var.
+
+Now you can log into `https://erxes.herokuapp.com` using the following credentials.
+
+```sh
+username: admin@erxes.io
+password: erxes
+```
+
 ### 3. Install erxes Widgets
 
 Now install erxes Widget app by clicking the deploy button below and set config vars.
@@ -71,48 +105,13 @@ PORT = 3200
 ROOT_URL = https://erxes-widget.herokuapp.com
 ```
 
-[![Deploy Widgets](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes Widgets")](https://heroku.com/deploy?template=https://github.com/batnasan/erxes-widgets/tree/heroku_button)
-
-Now go to Heroku dashboard and select the **erxes-api app** from the Apps tab.
-
-Go to Settings tab where you can manage your Config Vars as you need to update config vars of **erxes-api** app.
-
-In the Config Vars section, click a button 'Reveal Config Vars' so that you will be able to see all the config vars.
-
-Copy MONGO_URI's value and paste it into MONGO_URL.
-
-Copy RABBITMQ_URL's value and paste into RABBITMQ_HOST.
-
-Update REDIS_HOST, REDIS_PASSWORD, and REDIS_PORT values using REDIS_URL's value.
-
-Now click 'More' button in the top right corner, then select 'Run console'.  
-Run `yarn initProject` command which will create the following credentials for you to log into `https://erxes.herokuapp.com`.
-
-```sh
-username: admin@erxes.io
-password: erxes
-```
-
-Please now go to Resources tab as you will need to start `cronjob` and `worker` processes.
-Start `cronjob` and `worker`.
-
-Last step is to insert initial data. To do that you will need to clone `erxes-api` repo and `mongorestore` tool.
-
-Clone the `erxes-api` and run the following commands in the terminal.
-
-`cd erxes-api`
-
-`mongorestore --host=host --port=port -u user -d db initialData`
-
-`mongorestore --host=host --port=port -u user -d db permissionData`
-
-**Note**: extract `host`, `port`, `user`, `db` from the `MONGO_URI` config var.
+[![Deploy Widgets](https://www.herokucdn.com/deploy/button.svg#heroku "Deploy erxes Widgets")](https://heroku.com/deploy?template=https://github.com/batnasan/erxes-widgets-heroku-button)
 
 Now it's time to grab yourself a cup of coffee and enjoy using **erxes**.
 
 ## Extra features
 
-There is a several apps available for you to install and add extra features to erxes.  
+There is a several apps available for you to install and make erxes even more powerful.  
 The steps of installing them are same as above.
 
 ### 1. Install erxes engages email sender
